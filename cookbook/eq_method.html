@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> </head>
+<body>
+  <div>
+    <ul>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li> 
+      <li><a href="#">link</a></li> 
+      <li><a href="#">link</a></li> 
+    </ul>
+  </div>
+<script type="text/JavaScript" src = "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/JavaScript">
+  console.log($('li:eq(1)').next().children().html()); //selects the third <li> 
+  console.log($('li:eq(1)').prev().children().html()) ;//selects the first <li> 
+  console.log($('li:eq(1)').parent().children().html()); //selects the <ul> 
+  console.log($('li:eq(1)').parent().children().children().html());//selects all <li>s 
+  console.log($('li:eq(1)').nextAll().children().html()); //selects all the <li>s after the second 
+  console.log($('li:eq(1)').prevAll().children().html()); 
+</script> 
+</body> 
+</html>

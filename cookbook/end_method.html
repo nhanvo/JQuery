@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> </head>
+<body>
+<p>text</p>
+<p class="middle">Middle <span>text</span></p>
+<p>text</p>
+<script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
+<script type="text/JavaScript">
+  alert($('p').filter('.middle').length);
+  alert($('p').filter('.middle').end().length);
+  alert($('p').filter('.middle').find('span').end().end().length);
+</script>
+</body>
+</html>
