@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 import ajaxdemo.pojo.Countries;
+import java.io.FileInputStream;
 
 public class FetchData {
     private static Connection connection = null;
@@ -32,7 +33,7 @@ public class FetchData {
         else {
             try {
                 Properties prop = new Properties();
-                InputStream inputStream = FetchData.class.getClassLoader().getResourceAsStream("/db.properties");
+                 InputStream inputStream = FetchData.class.getClassLoader().getResourceAsStream("/db.properties");
                 prop.load(inputStream);
                 String driver = prop.getProperty("driver");
                 String url = prop.getProperty("url");
