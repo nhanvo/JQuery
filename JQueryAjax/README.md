@@ -6,3 +6,6 @@ Include three part:<br/><br/>
 <br/>
 <b>SQL query:</b> sql/country.sql<br/>
 <b>db configure:</b> src/java/db.properties<br/>
+<b>Note</b><br/>
+MySQL 5.x: using mysql-connector-java-5.1.40-bin.jar
+MySQL 6.x: using mysql-connector-java-6.0.4.jar
