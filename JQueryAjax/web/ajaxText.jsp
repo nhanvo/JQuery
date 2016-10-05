@@ -31,5 +31,7 @@
             <input type="button" id="submit" value="Ajax submit"/>
             <div id="welcometext"></div>
         </form>
+        <br/>
+        <a href="index.jsp">Back</a>
     </body>
 </html>

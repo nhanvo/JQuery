@@ -39,5 +39,7 @@
         <select id="states">
             <option>Select state</option>
         </select>
+        <br/>
+        <a href="index.jsp">Back</a>
     </body>
 </html>
