@@ -155,7 +155,7 @@
     </div>
 
     <script>
-        // Load quiz data from data.json (or data_kanji.json) and render dynamically based on selected kanji
+        // Load quiz data from the local data.json and render dynamically based on selected kanji
         let quizData = [];
         let currentIndex = 0;
         let userResults = JSON.parse(localStorage.getItem('quizResult') || '[]');
@@ -167,8 +167,8 @@
             // Determine which kanji set to load based on URL query parameter
             const params = new URLSearchParams(window.location.search);
             const requestedKanji = params.get('kanji');
-            // Fetch the JSON data (same structure as data_kanji.json)
-            fetch('data_kanji.json')
+            // Fetch the JSON data (same structure as the local data.json)
+            fetch('data.json')
                 .then(response => response.json())
                 .then(data => {
                     if (!Array.isArray(data) || data.length === 0) {
@@ -293,7 +293,7 @@
         function showResult() {
             // Ensure results are saved before navigating
             localStorage.setItem('quizResult', JSON.stringify(userResults));
-            window.location.href = 'quiz_result.html';
+            window.location.href = 'result.html';
         }
 
     </script>

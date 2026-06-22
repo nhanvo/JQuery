@@ -36,14 +36,14 @@
             document.getElementById('result-container').innerHTML = html;
         }
         function restartQuiz() {
-            // Clear stored results and go back to quiz page
+            // Clear stored results and go back to the quiz detail page
             localStorage.removeItem('quizResult');
-            window.location.href = 'quiz_detail.html';
+            window.location.href = 'detail.html';
         }
         function goBackToList() {
-            // Clear stored results and navigate back to the list screen
+            // Clear stored results and navigate back to the quiz list screen
             localStorage.removeItem('quizResult');
-            window.location.href = 'quiz_list.html';
+            window.location.href = 'list.html';
         }
         renderResults();
     </script>

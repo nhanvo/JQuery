@@ -22,7 +22,8 @@
         // Load data_kanji.json and render a list of kanji names.
         // Clicking a kanji name will navigate to quiz_detail.html with a query param.
         // Try to fetch the JSON data. If it fails (e.g., when opened via file://), fall back to a hard‑coded list.
-        fetch('data_kanji.json')
+        // Updated to use the correct data file within this folder
+        fetch('data.json')
             .then(r => r.json())
             .then(data => {
                 renderList(data);
@@ -44,8 +45,8 @@
                 const kanjiText = group.mondai || group.kanji || '';
                 const link = document.createElement('a');
                 link.textContent = kanjiText;
-                // Navigate to the detail page with a query parameter
-                link.href = `quiz_detail.html?kanji=${encodeURIComponent(kanjiText)}`;
+                // Navigate to the detail page (detail.html) with a query parameter
+                link.href = `detail.html?kanji=${encodeURIComponent(kanjiText)}`;
                 // Apply same visual styling as the previous non‑link divs
                 link.style.display = 'block';
                 link.style.margin = '4px 0';
