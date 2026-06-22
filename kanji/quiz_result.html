@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết Quả Quiz</title>
+    <style>
+        body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#f7fafc; padding:20px;}
+        h1 {color:#2d3748;}
+        table {width:100%; border-collapse:collapse; margin-top:20px;}
+        th, td {border:1px solid #e2e8f0; padding:8px; text-align:left;}
+        th {background:#edf2f7;}
+        .correct {background:#c6f6d5;}
+        .incorrect {background:#fed7d7;}
+        .btn {margin-top:20px; padding:10px 20px; background:#667eea; color:white; border:none; border-radius:5px; cursor:pointer;}
+    </style>
+</head>
+<body>
+    <h1>Kết Quả Quiz</h1>
+    <div id="result-container"></div>
+    <button class="btn" onclick="restartQuiz()">Làm lại</button>
+    <button class="btn" style="margin-left:10px;" onclick="goBackToList()">Quay lại danh sách</button>
+    <script>
+        function renderResults() {
+            const results = JSON.parse(localStorage.getItem('quizResult') || '[]');
+            if (!results.length) {
+                document.getElementById('result-container').innerHTML = '<p>Chưa có kết quả nào.</p>';
+                return;
+            }
+            let html = '<table><tr><th>#</th><th>Câu hỏi</th><th>Chọn</th><th>Đáp án đúng</th><th>Kết quả</th></tr>';
+            results.forEach((r, idx) => {
+                const rowClass = r.isCorrect ? 'correct' : 'incorrect';
+                html += `<tr class="${rowClass}"><td>${idx + 1}</td><td>${r.question}</td><td>${r.selected}</td><td>${r.correct}</td><td>${r.isCorrect ? 'Đúng' : 'Sai'}</td></tr>`;
+            });
+            html += '</table>';
+            document.getElementById('result-container').innerHTML = html;
+        }
+        function restartQuiz() {
+            // Clear stored results and go back to quiz page
+            localStorage.removeItem('quizResult');
+            window.location.href = 'quiz_detail.html';
+        }
+        function goBackToList() {
+            // Clear stored results and navigate back to the list screen
+            localStorage.removeItem('quizResult');
+            window.location.href = 'quiz_list.html';
+        }
+        renderResults();
+    </script>
+</body>
+</html>
