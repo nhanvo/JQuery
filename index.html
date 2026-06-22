@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Diện Quiz Thử Thách</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .quiz-container {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        /* Thanh tiến trình */
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            width: 33%; /* Thay đổi theo tiến độ câu hỏi */
+            background: linear-gradient(90deg, #4299e1, #667eea);
+            transition: width 0.4s ease;
+        }
+
+        /* Câu hỏi */
+        .question-number {
+            font-size: 0.9rem;
+            color: #718096;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .question-text {
+            font-size: 1.4rem;
+            color: #2d3748;
+            font-weight: 700;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        /* Danh sách đáp án */
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .option-btn {
+            background-color: #f7fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 15px 20px;
+            font-size: 1rem;
+            color: #4a5568;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        .option-btn:hover {
+            background-color: #edf2f7;
+            border-color: #cbd5e0;
+            transform: translateY(-2px);
+        }
+
+        /* Trạng thái khi chọn đáp án đúng/sai (Dùng cho JS sau này) */
+        .option-btn.selected {
+            background-color: #ebf8ff;
+            border-color: #3182ce;
+            color: #2b6cb0;
+        }
+
+        /* Nút điều hướng */
+        .quiz-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-btn {
+            background-color: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .nav-btn:hover {
+            background-color: #5a67d8;
+        }
+
+        .nav-btn:disabled {
+            background-color: #cbd5e0;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- Thanh tiến trình -->
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <!-- Nội dung câu hỏi -->
+        <div class="quiz-body">
+            <div class="question-number" id="q-number"></div>
+            <div class="question-text" id="q-text">Trình duyệt web nào phổ biến nhất thế giới hiện nay?</div>
+            
+            <!-- Các lựa chọn -->
+            <div class="options-list" id="options">
+                <button class="option-btn" onclick="selectOption(this)">A. Mozilla Firefox</button>
+                <button class="option-btn" onclick="selectOption(this)">B. Google Chrome</button>
+                <button class="option-btn" onclick="selectOption(this)">C. Microsoft Edge</button>
+                <button class="option-btn" onclick="selectOption(this)">D. Safari</button>
+            </div>
+        </div>
+
+        <!-- Nút bấm điều hướng -->
+        <div class="quiz-footer">
+        <button class="nav-btn" id="prev-btn" disabled onclick="prevQuestion()">Quay lại</button>
+        <button class="nav-btn" id="next-btn" onclick="nextQuestion()">Tiếp theo</button>
+        </div>
+    </div>
+
+    <script>
+        // Load quiz data from data.json and render dynamically
+        let quizData = [];
+        let currentIndex = 0;
+
+        // Initialize the app after the DOM is ready
+        document.addEventListener('DOMContentLoaded', init);
+
+        function init() {
+            // Attempt to fetch the JSON data. If it fails (e.g., when opened via file://), use fallback data.
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    quizData = data;
+                    renderQuestion();
+                })
+                .catch(error => {
+                    console.warn('Failed to load quiz data via fetch, using fallback data:', error);
+                    // Fallback data (same as in data.json) to ensure the app works without a server
+                    quizData = [
+                        {
+                            question: "Trình duyệt web nào phổ biến nhất thế giới hiện nay?",
+                            options: ["Mozilla Firefox", "Google Chrome", "Microsoft Edge", "Safari"],
+                            answer: "Google Chrome"
+                        },
+                        {
+                            question: "Ngôn ngữ nào được mệnh danh là \"vua của lập trình web\"?",
+                            options: ["Python", "Java", "JavaScript", "C++"],
+                            answer: "JavaScript"
+                        },
+                        {
+                            question: "Câu hỏi thứ ba (ví dụ) - Bạn muốn thêm gì?",
+                            options: ["Option 1", "Option 2", "Option 3", "Option 4"],
+                            answer: "Option 1"
+                        },
+                        {
+                            question: "Câu hỏi thứ tư (ví dụ) - Bạn muốn thêm gì?",
+                            options: ["Option 1", "Option 2", "Option 3", "Option 4"],
+                            answer: "Option 4"
+                        }
+                    ];
+                    renderQuestion();
+                });
+        }
+
+        // Render the current question and options
+        function renderQuestion() {
+            if (!quizData.length) return;
+            const q = quizData[currentIndex];
+            document.getElementById('q-number').innerText = `Câu hỏi ${currentIndex + 1} trên ${quizData.length}`;
+            document.getElementById('q-text').innerText = q.question;
+
+            const optionsContainer = document.getElementById('options');
+            optionsContainer.innerHTML = '';
+            q.options.forEach(option => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = option;
+                btn.onclick = () => selectOption(btn);
+                optionsContainer.appendChild(btn);
+            });
+
+            // Update navigation button states
+            document.getElementById('prev-btn').disabled = currentIndex === 0;
+            document.getElementById('next-btn').disabled = currentIndex === quizData.length - 1;
+            updateProgress();
+        }
+
+        // Highlight selected option
+        function selectOption(element) {
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(btn => btn.classList.remove('selected'));
+            element.classList.add('selected');
+        }
+
+        function nextQuestion() {
+            if (currentIndex < quizData.length - 1) {
+                currentIndex++;
+                renderQuestion();
+            }
+        }
+
+        function prevQuestion() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                renderQuestion();
+            }
+        }
+
+        function updateProgress() {
+            const progressElem = document.getElementById('progress');
+            const percent = ((currentIndex + 1) / quizData.length) * 100;
+            progressElem.style.width = `${percent}%`;
+        }
+    </script>
+</body>
+</html>
