@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Diện Quiz Thử Thách</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .quiz-container {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        /* Thanh tiến trình */
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            width: 33%; /* Thay đổi theo tiến độ câu hỏi */
+            background: linear-gradient(90deg, #4299e1, #667eea);
+            transition: width 0.4s ease;
+        }
+
+        /* Câu hỏi */
+        .question-number {
+            font-size: 0.9rem;
+            color: #718096;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .question-text {
+            font-size: 1.4rem;
+            color: #2d3748;
+            font-weight: 700;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        /* Danh sách đáp án */
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .option-btn {
+            background-color: #f7fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 15px 20px;
+            font-size: 1rem;
+            color: #4a5568;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        .option-btn:hover {
+            background-color: #edf2f7;
+            border-color: #cbd5e0;
+            transform: translateY(-2px);
+        }
+
+        /* Trạng thái khi chọn đáp án đúng/sai (Dùng cho JS sau này) */
+        .option-btn.selected {
+            background-color: #ebf8ff;
+            border-color: #3182ce;
+            color: #2b6cb0;
+        }
+
+        /* Nút điều hướng */
+        .quiz-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-btn {
+            background-color: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .nav-btn:hover {
+            background-color: #5a67d8;
+        }
+
+        .nav-btn:disabled {
+            background-color: #cbd5e0;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- Thanh tiến trình -->
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <!-- Nội dung câu hỏi -->
+        <div class="quiz-body">
+            <div class="question-number" id="q-number"></div>
+            <div class="question-text" id="q-text"></div>
+            
+            <!-- Các lựa chọn -->
+            <div class="options-list" id="options"></div>
+        </div>
+
+        <!-- Nút bấm điều hướng -->
+    <div class="quiz-footer">
+        <button class="nav-btn" id="prev-btn" disabled onclick="prevQuestion()">Quay lại</button>
+        <button class="nav-btn" id="next-btn" onclick="nextQuestion()">Tiếp theo</button>
+        <button class="nav-btn" id="result-btn" style="display:none;" onclick="showResult()">Kết Quả</button>
+    </div>
+    </div>
+
+    <script>
+        // Load quiz data from the local data.json and render dynamically based on selected kanji
+        let quizData = [];
+        let currentIndex = 0;
+        let userResults = JSON.parse(localStorage.getItem('quizResult') || '[]');
+
+        // Initialize the app after the DOM is ready
+        document.addEventListener('DOMContentLoaded', init);
+
+        function init() {
+            // Determine which kanji set to load based on URL query parameter
+            const params = new URLSearchParams(window.location.search);
+            const requestedKanji = params.get('kanji');
+            // Fetch the JSON data (same structure as the local data.json)
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    if (!Array.isArray(data) || data.length === 0) {
+                        throw new Error('Invalid data format');
+                    }
+                    // Find the group matching the requested kanji, or fall back to first group
+                    // Support both 'kanji' and legacy 'mondai' fields when matching the query parameter
+                    const group = requestedKanji ? data.find(g => (g.kanji === requestedKanji) || (g.mondai === requestedKanji)) : data[0];
+                    quizData = (group && group.questions) ? group.questions : data[0].questions;
+                    renderQuestion();
+                })
+                .catch(error => {
+                    console.error('Failed to load quiz data via fetch:', error);
+                    // Show a user‑friendly message instead of placeholder fallback data
+                    document.getElementById('q-text').innerText = 'Không thể tải dữ liệu câu hỏi.';
+                    document.getElementById('q-number').innerText = '';
+                    // Clear options
+                    document.getElementById('options').innerHTML = '';
+                });
+        }
+
+        // Render the current question and options
+        function renderQuestion() {
+            if (!quizData.length) return;
+            const q = quizData[currentIndex];
+            document.getElementById('q-number').innerText = `Câu hỏi ${currentIndex + 1} trên ${quizData.length}`;
+            // Use innerHTML to render any HTML tags (e.g., <u>) present in the question text.
+            document.getElementById('q-text').innerHTML = q.question;
+
+            const optionsContainer = document.getElementById('options');
+            optionsContainer.innerHTML = '';
+            // Shuffle options to prevent habit formation
+            const shuffledOptions = q.options.slice(); // copy array
+            for (let i = shuffledOptions.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
+            }
+            shuffledOptions.forEach(option => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = option;
+                btn.onclick = () => selectOption(btn);
+                optionsContainer.appendChild(btn);
+            });
+
+            // Update navigation button states
+            document.getElementById('prev-btn').disabled = currentIndex === 0;
+            document.getElementById('next-btn').disabled = currentIndex === quizData.length - 1;
+            // Show or hide the result button based on position
+            const resultBtn = document.getElementById('result-btn');
+            if (currentIndex === quizData.length - 1) {
+                // Last question – hide navigation and show result button
+                document.getElementById('next-btn').style.display = 'none';
+                document.getElementById('prev-btn').style.display = 'none';
+                resultBtn.style.display = 'inline-block';
+                resultBtn.style.visibility = 'visible';
+            } else {
+                // Not last – ensure navigation is visible and result button hidden
+                document.getElementById('next-btn').style.display = 'inline-block';
+                document.getElementById('prev-btn').style.display = 'inline-block';
+                resultBtn.style.display = 'none';
+                resultBtn.style.visibility = 'hidden';
+            }
+            updateProgress();
+        }
+
+        // Highlight selected option
+        function selectOption(element) {
+            const buttons = document.querySelectorAll('.option-btn');
+            // Remove previous selections
+            buttons.forEach(btn => btn.classList.remove('selected'));
+            element.classList.add('selected');
+
+            const q = quizData[currentIndex];
+            const isCorrect = element.textContent.trim() === q.answer.trim();
+            // Apply color based on correctness
+            if (isCorrect) {
+                element.style.backgroundColor = '#c6f6d5'; // light green
+                element.style.borderColor = '#48bb78';
+            } else {
+                element.style.backgroundColor = '#fed7d7'; // light red
+                element.style.borderColor = '#f56565';
+            }
+            // Disable all option buttons after selection
+            buttons.forEach(btn => btn.disabled = true);
+
+            // Record result
+            const result = {
+                question: q.question,
+                selected: element.textContent.trim(),
+                correct: q.answer.trim(),
+                isCorrect: isCorrect
+            };
+            userResults[currentIndex] = result;
+            // Save to localStorage
+            localStorage.setItem('quizResult', JSON.stringify(userResults));
+
+            // If last question answered, show result button and hide navigation
+            // The result button visibility is now handled in renderQuestion(). No additional actions needed here.
+        }
+
+        function nextQuestion() {
+            if (currentIndex < quizData.length - 1) {
+                currentIndex++;
+                renderQuestion();
+            }
+        }
+
+        function prevQuestion() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                renderQuestion();
+            }
+        }
+
+        function updateProgress() {
+            const progressElem = document.getElementById('progress');
+            const percent = ((currentIndex + 1) / quizData.length) * 100;
+            progressElem.style.width = `${percent}%`;
+        }
+
+        function showResult() {
+            // Ensure results are saved before navigating
+            localStorage.setItem('quizResult', JSON.stringify(userResults));
+            window.location.href = 'result.html';
+        }
+
+    </script>
+</body>
+</html>

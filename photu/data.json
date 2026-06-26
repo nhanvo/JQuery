@@ -1,0 +1,1365 @@
+[
+  {
+    "mondai": "問題 1",
+    "questions": [
+      {
+        "id": 1,
+        "question": "空が急に暗くなって、今() 雨が降り出しそうだ。",
+        "options": [
+          "でも",
+          "なら",
+          "にも",
+          "こそ"
+        ],
+        "answer": "にも",
+        "explain": "Trời bỗng nhiên tối sầm lại, có vẻ như bây giờ sắp sửa mưa đến nơi rồi."
+      },
+      {
+        "id": 2,
+        "question": "明るい山田さんが、今日は() 元気がないように見える。",
+        "options": [
+          "ますます",
+          "いつでも",
+          "なんとか",
+          "なんとなく"
+        ],
+        "answer": "なんとなく",
+        "explain": "Yamada vốn là người vui vẻ, hôm nay không hiểu sao trông có vẻ không được khỏe."
+      },
+      {
+        "id": 3,
+        "question": "() おしゃれして出かけたのに、雪で電車が止まってしまった。",
+        "options": [
+          "せっかく",
+          "めったに〜ない",
+          "たった今",
+          "なるべく"
+        ],
+        "answer": "せっかく",
+        "explain": "Đã cất công ăn diện để đi chơi, vậy mà tàu lại dừng chạy vì tuyết."
+      },
+      {
+        "id": 4,
+        "question": "仕事は() 忙しいが、おもしろいから疲れない。",
+        "options": [
+          "とっくに",
+          "いつの間にか",
+          "一応",
+          "相変わらず"
+        ],
+        "answer": "相変わらず",
+        "explain": "Công việc vẫn bận rộn như mọi khi, nhưng vì thú vị nên tôi không thấy mệt."
+      },
+      {
+        "id": 5,
+        "question": "新しいデザインの車が()発売された。",
+        "options": [
+          "すっかり",
+          "相当",
+          "わざと",
+          "次々と"
+        ],
+        "answer": "次々と",
+        "explain": "Những chiếc xe với thiết kế mới lần lượt được tung ra thị trường."
+      },
+      {
+        "id": 6,
+        "question": "可愛かった彼女は、大人になって() すてきになった。",
+        "options": [
+          "たしか",
+          "別に",
+          "ますます",
+          "なんとか"
+        ],
+        "answer": "ますます",
+        "explain": "Cô ấy vốn dĩ rất đáng yêu, khi lớn lên lại càng trở nên tuyệt vời hơn."
+      },
+      {
+        "id": 7,
+        "question": "彼は大きなハンバーガーを() 3つも食べた。",
+        "options": [
+          "あっと言う間に",
+          "しばらく",
+          "いつまでも",
+          "今にも"
+        ],
+        "answer": "あっと言う間に",
+        "explain": "Anh ấy đã ăn hết 3 cái hamburger lớn trong nháy mắt."
+      },
+      {
+        "id": 8,
+        "question": "うるさい父は、私の行動を () チェックする。",
+        "options": [
+          "いちいち",
+          "うっかり",
+          "ますます",
+          "たしかに"
+        ],
+        "answer": "いちいち",
+        "explain": "Ông bố khó tính của tôi kiểm soát mọi hành động của tôi (từng li từng tí)."
+      },
+      {
+        "id": 9,
+        "question": "朝から心配していたが、娘が高校に合格したという連絡を () もらった。",
+        "options": [
+          "せっかく",
+          "今から",
+          "できるだけ",
+          "たった今"
+        ],
+        "answer": "たった今",
+        "explain": "Tôi đã lo lắng từ sáng, nhưng vừa mới nhận được liên lạc là con gái đã đỗ vào trường cấp ba."
+      },
+      {
+        "id": 10,
+        "question": "いつも自炊しているので、() 外食はしない。",
+        "options": [
+          "わざと",
+          "めったに〜ない",
+          "なんとか",
+          "相当"
+        ],
+        "answer": "めったに〜ない",
+        "explain": "Vì lúc nào cũng tự nấu ăn nên tôi hiếm khi đi ăn ngoài."
+      }
+    ]
+  },
+  {
+    "mondai": "問題 2",
+    "questions": [
+      {
+        "id": 11,
+        "question": "テレビを見ていて、<u>いつの</u>間に<u>か</u>寝てしまった。",
+        "options": [
+          "いつまでも",
+          "しょっちゅう",
+          "いつでも",
+          "いつのまにか"
+        ],
+        "answer": "いつのまにか",
+        "explain": "Đang xem tivi thì ngủ quên mất lúc nào không hay."
+      },
+      {
+        "id": 12,
+        "question": "この問題は、<u>できるだけ</u>辞書を使わないでやってみなさい。",
+        "options": [
+          "なんとなく",
+          "次々と",
+          "できるだけ",
+          "せっかく"
+        ],
+        "answer": "できるだけ",
+        "explain": "Hãy cố gắng làm bài tập này mà không sử dụng từ điển."
+      },
+      {
+        "id": 13,
+        "question": "「当店は都合により<u>しばらく</u>休ませていただきます」",
+        "options": [
+          "たった今",
+          "しばらく",
+          "一応",
+          "相変わらず"
+        ],
+        "answer": "しばらく",
+        "explain": "Vì lý do cá nhân, cửa hàng chúng tôi xin phép được tạm nghỉ một thời gian."
+      },
+      {
+        "id": 14,
+        "question": "新しい先生は<u>ひじょうに</u>きびしいらしいので、みんな心配している。",
+        "options": [
+          "ひじょうに",
+          "なるべく",
+          "全然",
+          "なんとか"
+        ],
+        "answer": "ひじょうに",
+        "explain": "Nghe nói thầy giáo mới rất nghiêm khắc nên mọi người đều đang lo lắng."
+      },
+      {
+        "id": 15,
+        "question": "学生時代の思い出は<u>いつまでも</u>忘れないだろう。",
+        "options": [
+          "いつまでも",
+          "相変わらず",
+          "今にも",
+          "めったに"
+        ],
+        "answer": "いつまでも",
+        "explain": "Kỷ niệm thời sinh viên có lẽ tôi sẽ không bao giờ quên."
+      },
+      {
+        "id": 16,
+        "question": "引っ越ししたいので、<u>あちこち</u>歩いて部屋を探している。",
+        "options": [
+          "そちこち",
+          "どちこち",
+          "こちあち",
+          "あちこち"
+        ],
+        "answer": "あちこち",
+        "explain": "Vì muốn chuyển nhà nên tôi đang đi bộ khắp nơi để tìm phòng."
+      },
+      {
+        "id": 17,
+        "question": "前を<u>のろのろ</u>走っている車、早く行ってくれ。",
+        "options": [
+          "ぐらぐら",
+          "のろのろ",
+          "いらいら",
+          "すらすら"
+        ],
+        "answer": "のろのろ",
+        "explain": "Chiếc xe đang chạy lờ đờ phía trước kia, hãy đi nhanh lên giùm cái."
+      },
+      {
+        "id": 18,
+        "question": "自分で組み立てたテーブルのあしが<u>ぐらぐら</u>している。",
+        "options": [
+          "ぐるぐる",
+          "くらくら",
+          "ぐらぐら",
+          "くるくる"
+        ],
+        "answer": "ぐらぐら",
+        "explain": "Cái chân bàn do chính tôi lắp ráp đang bị lung lay."
+      },
+      {
+        "id": 19,
+        "question": "彼はさっきから<u>にやにや</u>しているが、ちょっと気持ちが悪い。",
+        "options": [
+          "にやにや",
+          "ぺらぺら",
+          "いやいや",
+          "からから"
+        ],
+        "answer": "にやにや",
+        "explain": "Anh ta cứ cười tủm tỉm suốt nãy giờ, thấy hơi ghê ghê."
+      },
+      {
+        "id": 20,
+        "question": "私のふるさとでは、夜空に星が<u>きらきら</u>光っている。",
+        "options": [
+          "ぎらぎら",
+          "きらきら",
+          "こっそり",
+          "ごっそり"
+        ],
+        "answer": "きらきら",
+        "explain": "Ở quê tôi, những ngôi sao lấp lánh trên bầu trời đêm."
+      }
+    ]
+  },
+  {
+    "mondai": "問題 3",
+    "questions": [
+      {
+        "id": 21,
+        "question": "台風のせいか、人気レストランも ()だった。",
+        "options": [
+          "がらがら",
+          "ぺこぺこ",
+          "からから",
+          "ぶらぶら"
+        ],
+        "answer": "がらがら",
+        "explain": "Có lẽ do ảnh hưởng của bão mà nhà hàng nổi tiếng cũng vắng hoe."
+      },
+      {
+        "id": 22,
+        "question": "朝から何も食べていないので、おなかがすいて()する。",
+        "options": [
+          "ごくごく",
+          "きらきら",
+          "ぷんぷん",
+          "ふらふら"
+        ],
+        "answer": "ふらふら",
+        "explain": "Vì từ sáng đến giờ chưa ăn gì nên tôi đói đến mức chóng mặt, lảo đảo."
+      },
+      {
+        "id": 23,
+        "question": "木村さんは海外生活が長く、4か国語が()だそうだ。",
+        "options": [
+          "ぺらぺら",
+          "すらすら",
+          "いちいち",
+          "たびたび"
+        ],
+        "answer": "ぺらぺら",
+        "explain": "Nghe nói anh Kimura sống ở nước ngoài lâu nên nói được 4 thứ tiếng lưu loát."
+      },
+      {
+        "id": 24,
+        "question": "明日から旅行かと思うと、()する。",
+        "options": [
+          "ぐんぐん",
+          "がんがん",
+          "はらはら",
+          "わくわく"
+        ],
+        "answer": "わくわく",
+        "explain": "Cứ nghĩ đến việc ngày mai được đi du lịch là tôi lại thấy háo hức, phấn khích."
+      },
+      {
+        "id": 25,
+        "question": "うちではカレーにソースを () かけて食べる。",
+        "options": [
+          "すっかり",
+          "ぐっすり",
+          "たっぷり",
+          "のんびり"
+        ],
+        "answer": "たっぷり",
+        "explain": "Ở nhà tôi, mọi người thường rưới rất nhiều sốt lên món cà ri để ăn."
+      },
+      {
+        "id": 26,
+        "question": "「ママ、プレゼント!」と花をくれた娘を、母親は()抱きしめた。",
+        "options": [
+          "じっと",
+          "どきっと",
+          "ほっと",
+          "ぎゅっと"
+        ],
+        "answer": "ぎゅっと",
+        "explain": "Người mẹ ôm chặt đứa con gái khi con bé tặng hoa và nói: 'Mẹ ơi, quà cho mẹ này!'"
+      },
+      {
+        "id": 27,
+        "question": "都会より田舎の生活のほうが () していて好きだ。",
+        "options": [
+          "のんびり",
+          "のろのろ",
+          "じっと",
+          "きらきら"
+        ],
+        "answer": "のんびり",
+        "explain": "Tôi thích cuộc sống ở quê hơn vì nó thong thả, thư thái hơn so với ở thành phố."
+      },
+      {
+        "id": 28,
+        "question": "ゆうべは() 寝たので、今日はとても気分がいい。",
+        "options": [
+          "こっそり",
+          "うとうと",
+          "ぐっすり",
+          "ぴったり"
+        ],
+        "answer": "ぐっすり",
+        "explain": "Vì tối qua ngủ rất ngon giấc nên hôm nay tinh thần tôi rất thoải mái."
+      },
+      {
+        "id": 29,
+        "question": "頭が痛かったが、この薬を飲んだら () した。",
+        "options": [
+          "しっかり",
+          "すっかり",
+          "そっくり",
+          "すっきり"
+        ],
+        "answer": "すっきり",
+        "explain": "Đầu tôi đã đau, nhưng sau khi uống thuốc này thì cảm thấy dễ chịu hẳn đi."
+      },
+      {
+        "id": 30,
+        "question": "私と目が合ったとき、彼女は () 笑った。",
+        "options": [
+          "ぴったり",
+          "にっこり",
+          "そっくり",
+          "のんびり"
+        ],
+        "answer": "にっこり",
+        "explain": "Khi ánh mắt chúng tôi chạm nhau, cô ấy mỉm cười."
+      }
+    ]
+  },
+  {
+    "mondai": "問題 4",
+    "questions": [
+      {
+        "id": 31,
+        "question": "冬は5時になると、この辺りは<u>すっかり</u>暗くなる。",
+        "options": [
+          "そっくり",
+          "すっきり",
+          "こっそり",
+          "すっかり"
+        ],
+        "answer": "すっかり",
+        "explain": "Vào mùa đông, cứ đến 5 giờ là xung quanh đây trở nên tối hẳn."
+      },
+      {
+        "id": 32,
+        "question": "新しいヘアスタイルは、彼女に<u>ぴったり</u>だ。",
+        "options": [
+          "すっかり",
+          "ぴったり",
+          "どっきり",
+          "にっこり"
+        ],
+        "answer": "ぴったり",
+        "explain": "Kiểu tóc mới rất hợp với cô ấy."
+      },
+      {
+        "id": 33,
+        "question": "地震で家具がぐらぐら揺れた。",
+        "options": [
+          "ごろごろ",
+          "ぐらぐら",
+          "たいてい",
+          "お互いに"
+        ],
+        "answer": "ぐらぐら",
+        "explain": "Lung lay, rung lắc: Đồ đạc trong nhà bị rung lắc do động đất."
+      },
+      {
+        "id": 34,
+        "question": "使ったものは、＿＿＿元の所に戻しておいてください。",
+        "options": [
+          "ざっと",
+          "きちんと",
+          "どんどん",
+          "まさか"
+        ],
+        "answer": "きちんと",
+        "explain": "Hẳn hoi, nghiêm chỉnh: Đồ dùng xong hãy cất lại chỗ cũ cho ngăn nắp."
+      },
+      {
+        "id": 35,
+        "question": "十年振りにいとこに会ったが、＿＿＿変わっていなかった。",
+        "options": [
+          "すっきり",
+          "だいたい",
+          "ちっとも",
+          "ぼんやり"
+        ],
+        "answer": "ちっとも",
+        "explain": "Một chút cũng không (dùng với phủ định): Mười năm rồi mới gặp lại anh/chị họ, mà chẳng thấy thay đổi chút nào cả."
+      },
+      {
+        "id": 36,
+        "question": "今、家族３人は別々に暮らしている。",
+        "options": [
+          "そっくり",
+          "別々に",
+          "さっさと",
+          "うっかり"
+        ],
+        "answer": "別々に",
+        "explain": "Riêng ra/Để riêng: Bây giờ, 3 người trong gia đình đang sống riêng biệt."
+      },
+      {
+        "id": 37,
+        "question": "酔っ払いがふらふら歩いている。",
+        "options": [
+          "ふらふら",
+          "がっかり",
+          "からから",
+          "しっかり"
+        ],
+        "answer": "ふらふら",
+        "explain": "Loạng choạng/Chóng mặt: Người say rượu đang đi loạng choạng."
+      },
+      {
+        "id": 38,
+        "question": "兄は頑固なところが父にそっくりだ。",
+        "options": [
+          "そっくり",
+          "早速",
+          "なるべく",
+          "この間"
+        ],
+        "answer": "そっくり",
+        "explain": "Giống hệt: Anh trai tôi có những điểm bướng bỉnh giống hệt bố."
+      },
+      {
+        "id": 39,
+        "question": "秋になると、木の葉が次第に色づく。",
+        "options": [
+          "すべて",
+          "まったく",
+          "次第に",
+          "ぴったり"
+        ],
+        "answer": "次第に",
+        "explain": "Dần dần: Khi vào thu, lá cây dần dần đổi màu."
+      },
+      {
+        "id": 40,
+        "question": "彼は相変わらずせっせと働いている。",
+        "options": [
+          "偶然",
+          "相変わらず",
+          "急に",
+          "さっき"
+        ],
+        "answer": "相変わらず",
+        "explain": "Như mọi khi: Anh ấy vẫn đang làm việc chăm chỉ như mọi khi."
+      }
+    ]
+  },
+  {
+    "mondai": "問題 5",
+    "questions": [
+      {
+        "id": 1,
+        "question": "決してその窓を開け放っておいてはいけない。",
+        "options": [
+          "決して",
+          "常に",
+          "主に",
+          "全然"
+        ],
+        "answer": "決して",
+        "explain": "Nhất định không (dùng với phủ định): Nhất định không được để cửa sổ mở như vậy."
+      },
+      {
+        "id": 2,
+        "question": "自然食品がつねに消化にいいとは限らない。",
+        "options": [
+          "初めて",
+          "近々",
+          "常に",
+          "たいてい"
+        ],
+        "answer": "常に",
+        "explain": "Thường, luôn luôn: Không phải lúc nào thực phẩm tự nhiên cũng tốt cho tiêu hóa."
+      },
+      {
+        "id": 3,
+        "question": "この会社は主にパソコンの部品を作っています。",
+        "options": [
+          "お互いに",
+          "主に",
+          "わざわざ",
+          "近々"
+        ],
+        "answer": "主に",
+        "explain": "Chính, chủ yếu: Công ty này chủ yếu sản xuất linh kiện máy tính."
+      },
+      {
+        "id": 4,
+        "question": "これでは全然負けだと思った。",
+        "options": [
+          "全然",
+          "常に",
+          "初めて",
+          "たいてい"
+        ],
+        "answer": "全然",
+        "explain": "Hoàn toàn (dùng với phủ định): Tôi nghĩ thế này là hoàn toàn thua cuộc rồi."
+      },
+      {
+        "id": 5,
+        "question": "お互いに見解の相違があると認めます。",
+        "options": [
+          "常に",
+          "主に",
+          "お互いに",
+          "近々"
+        ],
+        "answer": "お互いに",
+        "explain": "Lẫn nhau: Chúng tôi thừa nhận rằng hai bên có sự khác biệt về quan điểm."
+      },
+      {
+        "id": 6,
+        "question": "日本で旅行に行くのは初めてなので、楽しみです。",
+        "options": [
+          "わざわざ",
+          "初めて",
+          "たいてい",
+          "全然"
+        ],
+        "answer": "初めて",
+        "explain": "Lần đầu tiên: Vì đây là lần đầu tôi đi du lịch ở Nhật Bản nên tôi rất mong chờ."
+      },
+      {
+        "id": 7,
+        "question": "近々伺うつもりだが、忙しくて来月になってしまいそうだ。",
+        "options": [
+          "近々",
+          "常に",
+          "お互いに",
+          "主に"
+        ],
+        "answer": "近々",
+        "explain": "Sắp tới, gần kề: Tôi dự định sẽ ghé thăm sớm, nhưng vì bận nên có vẻ sẽ thành tháng sau mất."
+      },
+      {
+        "id": 8,
+        "question": "父は外出するときはたいてい帽子をかぶる。",
+        "options": [
+          "初めて",
+          "全然",
+          "たいてい",
+          "わざわざ"
+        ],
+        "answer": "たいてい",
+        "explain": "Thường, đại khái: Bố tôi thường đội mũ khi đi ra ngoài."
+      },
+      {
+        "id": 9,
+        "question": "わざわざ遠くから来てくれてありがとう！",
+        "options": [
+          "お互いに",
+          "わざわざ",
+          "常に",
+          "主に"
+        ],
+        "answer": "わざわざ",
+        "explain": "Cất công: Cảm ơn bạn đã cất công đến đây từ nơi xa!"
+      },
+      {
+        "id": 10,
+        "question": "どこにも行かないで、家でごろごろするつもり。",
+        "options": [
+          "近々",
+          "たいてい",
+          "初めて",
+          "ごろごろ"
+        ],
+        "answer": "ごろごろ",
+        "explain": "Thư thả, nằm không làm gì cả: Tôi dự định sẽ không đi đâu cả và cứ nằm thư thả ở nhà thôi."
+      }
+    ]
+  },
+  {
+    "mondai": "問題 6",
+    "questions": [
+      {
+        "id": 12,
+        "question": "遠慮しないで、＿＿＿召し上がってください。",
+        "options": [
+          "どんどん",
+          "ぼんやり",
+          "すっきり",
+          "ちっとも"
+        ],
+        "answer": "どんどん",
+        "explain": "Dần dần, liên tục: Đừng ngại, hãy cứ tự nhiên ăn nhiều vào nhé."
+      },
+      {
+        "id": 13,
+        "question": "私たちは実験の結果に＿＿＿満足しています。",
+        "options": [
+          "にこにこ",
+          "ざっと",
+          "だいたい",
+          "きちんと"
+        ],
+        "answer": "だいたい",
+        "explain": "Đại khái, khoảng: Chúng tôi đại khái hài lòng với kết quả thí nghiệm."
+      },
+      {
+        "id": 14,
+        "question": "＿＿＿こんなところで、別れた恋人に会うと思わなかった。",
+        "options": [
+          "結局",
+          "まさか",
+          "つぎつぎ",
+          "すっきり"
+        ],
+        "answer": "まさか",
+        "explain": "Chả có nhẽ, không ngờ: Không thể ngờ lại gặp người yêu cũ ở nơi như thế này."
+      },
+      {
+        "id": 15,
+        "question": "海の向こうに島が＿＿＿見える。",
+        "options": [
+          "ぼんやり",
+          "べとべと",
+          "にこにこ",
+          "どんどん"
+        ],
+        "answer": "ぼんやり",
+        "explain": "Vu vơ, mờ mờ: Hòn đảo trông mờ mờ phía bên kia biển."
+      },
+      {
+        "id": 16,
+        "question": "私は球技が好きです。＿＿＿野球やテニスですね。",
+        "options": [
+          "だいたい",
+          "ざっと",
+          "例えば",
+          "結局"
+        ],
+        "answer": "例えば",
+        "explain": "Ví dụ: Tôi thích các môn bóng. Ví dụ như bóng chày hay quần vợt chẳng hạn."
+      },
+      {
+        "id": 17,
+        "question": "不満を言いたい放題言ったら、気分が＿＿＿した。",
+        "options": [
+          "すっきり",
+          "きちんと",
+          "べとべと",
+          "ぼんやり"
+        ],
+        "answer": "すっきり",
+        "explain": "Sảng khoái, nhẹ lòng: Nói ra hết những bất mãn thì thấy nhẹ cả lòng."
+      },
+      {
+        "id": 18,
+        "question": "赤ちゃんが＿＿＿笑っている。",
+        "options": [
+          "つぎつぎ",
+          "ちっとも",
+          "にこにこ",
+          "まさか"
+        ],
+        "answer": "にこにこ",
+        "explain": "Mỉm cười: Em bé đang mỉm cười."
+      },
+      {
+        "id": 19,
+        "question": "新聞の見出しに＿＿＿目を通した。",
+        "options": [
+          "ざっと",
+          "だいたい",
+          "どんどん",
+          "きちんと"
+        ],
+        "answer": "ざっと",
+        "explain": "Qua loa, đại khái: Tôi đã xem qua loa tiêu đề bài báo."
+      },
+      {
+        "id": 20,
+        "question": "先生の説明は、いつも長くて＿＿＿何が言いたいのかわからない。",
+        "options": [
+          "例えば",
+          "結局",
+          "まさか",
+          "すっきり"
+        ],
+        "answer": "結局",
+        "explain": "Kết cục, cuối cùng: Lời giải thích của thầy giáo lúc nào cũng dài dòng, cuối cùng chẳng biết muốn nói gì."
+      },
+      {
+        "id": 21,
+        "question": "犬に顔をなめられて、＿＿＿になった。",
+        "options": [
+          "べとべと",
+          "ぼんやり",
+          "にこにこ",
+          "つぎつぎ"
+        ],
+        "answer": "べとべと",
+        "explain": "Nhớp nháp, dính: Bị chó liếm mặt, nên mặt dính nhớp nháp hết cả."
+      },
+      {
+        "id": 22,
+        "question": "料理が＿＿＿運ばれてくるので、いくら食べてもなくならない。",
+        "options": [
+          "きちんと",
+          "ちっとも",
+          "つぎつぎ",
+          "だいたい"
+        ],
+        "answer": "つぎつぎ",
+        "explain": "Liên tiếp: Món ăn được mang lên liên tiếp, nên ăn mãi mà không hết."
+      }
+    ]
+  },
+  {
+    "mondai": "問題 7",
+    "questions": [
+      {
+        "id": 25,
+        "question": "いつまでもテレビを見ないで、＿＿＿宿題をしなさい。",
+        "options": [
+          "さっさと",
+          "うっかり",
+          "なるべく",
+          "すっきり"
+        ],
+        "answer": "さっさと",
+        "explain": "Nhanh chóng: Đừng xem tivi mãi nữa, hãy nhanh chóng làm bài tập đi."
+      },
+      {
+        "id": 26,
+        "question": "明日からいよいよオリンピックが開幕します。",
+        "options": [
+          "突然",
+          "いよいよ",
+          "別々に",
+          "しっかり"
+        ],
+        "answer": "いよいよ",
+        "explain": "Cuối cùng thì: Ngày mai Olympic cuối cùng cũng chính thức khai mạc."
+      },
+      {
+        "id": 27,
+        "question": "この間買ったばかりなのにテレビが壊れてしまった。",
+        "options": [
+          "この間",
+          "早め",
+          "しっかり",
+          "さっさと"
+        ],
+        "answer": "この間",
+        "explain": "Vừa rồi/Dạo nọ: Mới mua dạo nọ thôi mà tivi đã hỏng rồi."
+      },
+      {
+        "id": 28,
+        "question": "急いでいたので、＿＿＿違うバスに乗ってしまった。",
+        "options": [
+          "うっかり",
+          "ぶらぶら",
+          "がっかり",
+          "そっくり"
+        ],
+        "explain": "Lỡ đễnh/Sơ ý: Vì đang vội nên tôi đã sơ ý lên nhầm xe buýt.",
+        "answer": "うっかり"
+      },
+      {
+        "id": 29,
+        "question": "＿＿＿散歩しながら写真を撮る。",
+        "options": [
+          "ぶらぶら",
+          "からから",
+          "なるべく",
+          "いよいよ"
+        ],
+        "answer": "ぶらぶら",
+        "explain": "Lang thang/Nhàn rỗi: Vừa đi dạo thong dong vừa chụp ảnh."
+      },
+      {
+        "id": 30,
+        "question": "洗濯物が＿＿＿乾いた。",
+        "options": [
+          "ふらふら",
+          "からから",
+          "うっかり",
+          "しっかり"
+        ],
+        "answer": "からから",
+        "explain": "Khô khốc: Đồ giặt đã khô khốc rồi."
+      },
+      {
+        "id": 31,
+        "question": "新しい開店スーパーに早速行ってみた。",
+        "options": [
+          "突然",
+          "早速",
+          "別々に",
+          "がっかり"
+        ],
+        "answer": "早速",
+        "explain": "Ngay lập tức: Tôi đã thử đến siêu thị mới khai trương ngay lập tức."
+      },
+      {
+        "id": 32,
+        "question": "このビルは地震が起きても倒れないしっかりとした造りだ。",
+        "options": [
+          "しっかり",
+          "なるべく",
+          "そっくり",
+          "いよいよ"
+        ],
+        "answer": "しっかり",
+        "explain": "Chắc chắn/Cẩn thận: Tòa nhà này có kết cấu chắc chắn không bị đổ dù động đất xảy ra."
+      },
+      {
+        "id": 33,
+        "question": "楽しみにしていた旅行に行けなくなって、＿＿＿した。",
+        "options": [
+          "がっかり",
+          "さっさと",
+          "うっかり",
+          "突然"
+        ],
+        "answer": "がっかり",
+        "explain": "Thất vọng: Chuyến đi tôi mong chờ không đi được nên tôi rất thất vọng."
+      },
+      {
+        "id": 34,
+        "question": "出発まであまり時間がないので、なるべく早く来てください！",
+        "options": [
+          "なるべく",
+          "しっかり",
+          "この間",
+          "早速"
+        ],
+        "answer": "なるべく",
+        "explain": "Trong khả năng có thể: Vì không còn nhiều thời gian đến lúc xuất phát nên hãy đến nhanh nhất có thể nhé!"
+      },
+      {
+        "id": 35,
+        "question": "ある日突然何も見えなくなるとしたら、お前は一番何を見ていたいのか？",
+        "options": [
+          "突然",
+          "ぶらぶら",
+          "いよいよ",
+          "からから"
+        ],
+        "answer": "突然",
+        "explain": "Đột nhiên: Nếu một ngày đột nhiên bạn không thể nhìn thấy gì nữa, bạn muốn nhìn thấy điều gì nhất?"
+      }
+    ]
+  },
+  {
+    "mondai": "問題 8",
+    "questions": [
+      {
+        "id": 39,
+        "question": "彼はこの仕事にぴったりだ。",
+        "options": [
+          "ぴったり",
+          "がらがら",
+          "ずいぶん",
+          "そっと"
+        ],
+        "answer": "ぴったり",
+        "explain": "Vừa vặn, hợp: Anh ấy rất hợp với công việc này."
+      },
+      {
+        "id": 40,
+        "question": "この店はいつもがらがらだね。",
+        "options": [
+          "偶然",
+          "がらがら",
+          "どきどき",
+          "うろうろ"
+        ],
+        "answer": "がらがら",
+        "explain": "Trống vắng, vắng tanh: Quán này lúc nào cũng vắng nhỉ."
+      },
+      {
+        "id": 41,
+        "question": "彼は 20 代なのにずいぶん老けて見える。",
+        "options": [
+          "そろそろ",
+          "急に",
+          "ずいぶん",
+          "さっき"
+        ],
+        "answer": "ずいぶん",
+        "explain": "Tương đối, khá là: Dù anh ta mới 20 tuổi mà trông khá già dặn."
+      },
+      {
+        "id": 42,
+        "question": "寝ている人を起こさないように、そっと部屋を出た。",
+        "options": [
+          "このごろ",
+          "次第に",
+          "そっと",
+          "すべて"
+        ],
+        "answer": "そっと",
+        "explain": "Nhẹ nhàng: Tôi nhẹ nhàng rời khỏi phòng để không làm người đang ngủ thức giấc."
+      },
+      {
+        "id": 43,
+        "question": "偶然、駅で友達に会った。",
+        "options": [
+          "相変わらず",
+          "すべて",
+          "まったく",
+          "偶然"
+        ],
+        "answer": "偶然",
+        "explain": "Tình cờ: Tôi tình cờ gặp bạn ở nhà ga."
+      },
+      {
+        "id": 44,
+        "question": "スピーチに慣れた人ですら、話し始めはどきどきするそうだ。",
+        "options": [
+          "どきどき",
+          "うろうろ",
+          "そろそろ",
+          "急に"
+        ],
+        "answer": "どきどき",
+        "explain": "Hồi hộp, tim đập thình thịch: Nghe nói ngay cả những người quen diễn thuyết thì lúc bắt đầu nói cũng thấy hồi hộp."
+      },
+      {
+        "id": 45,
+        "question": "会場がわかんなくてうろうろしちゃったよ。",
+        "options": [
+          "さっき",
+          "うろうろ",
+          "このごろ",
+          "次第に"
+        ],
+        "answer": "うろうろ",
+        "explain": "Lượn lờ, đi quanh quẩn: Vì không biết hội trường ở đâu nên tôi cứ đi quanh quẩn mãi."
+      },
+      {
+        "id": 46,
+        "question": "そろそろ食事の時間ですね。",
+        "options": [
+          "相変わらず",
+          "まったく",
+          "そろそろ",
+          "すべて"
+        ],
+        "answer": "そろそろ",
+        "explain": "Sắp sửa: Sắp đến giờ ăn rồi nhỉ."
+      },
+      {
+        "id": 47,
+        "question": "急に雨が降り出した。",
+        "options": [
+          "急に",
+          "偶然",
+          "ぴったり",
+          "がらがら"
+        ],
+        "answer": "急に",
+        "explain": "Đột nhiên: Trời đột nhiên đổ mưa."
+      },
+      {
+        "id": 48,
+        "question": "誰がさっきお風呂に入りますか。",
+        "options": [
+          "ずいぶん",
+          "そっと",
+          "どきどき",
+          "さっき"
+        ],
+        "answer": "さっき",
+        "explain": "Vừa nãy: Ai là người vừa nãy đã đi tắm thế?"
+      },
+      {
+        "id": 49,
+        "question": "このごろ、寒くなってきました。",
+        "options": [
+          "うろうろ",
+          "このごろ",
+          "次第に",
+          "相変わらず"
+        ],
+        "answer": "このごろ",
+        "explain": "Dạo gần đây: Dạo gần đây trời đã trở lạnh rồi."
+      }
+    ]
+  },
+  {
+    "mondai": "問題 9",
+    "questions": [
+      {
+        "id": 1,
+        "question": "お金がすべてなわけではない。",
+        "options": [
+          "そろそろ",
+          "すべて",
+          "ずいぶん",
+          "うろうろ"
+        ],
+        "answer": "すべて",
+        "explain": "Tất cả: Không phải là tiền bạc là tất cả đâu."
+      },
+      {
+        "id": 2,
+        "question": "まったく、わけがわからない。",
+        "options": [
+          "まったく",
+          "そっと",
+          "どきどき",
+          "がらがら"
+        ],
+        "answer": "まったく",
+        "explain": "Thực sự là/Thật tình là: Thật tình, chẳng hiểu lý do gì cả."
+      },
+      {
+        "id": 3,
+        "question": "彼は絶対に約束を破らない人だ。",
+        "options": [
+          "絶対に",
+          "あらゆる",
+          "多少",
+          "ぺらぺら"
+        ],
+        "answer": "絶対に",
+        "explain": "Tuyệt đối: Anh ấy là người tuyệt đối không bao giờ thất hứa."
+      },
+      {
+        "id": 4,
+        "question": "彼はあらゆる困難を乗り越えた。",
+        "options": [
+          "ようやく",
+          "あらゆる",
+          "そのまま",
+          "早めに"
+        ],
+        "answer": "あらゆる",
+        "explain": "Mọi thứ, tất cả: Anh ấy đã vượt qua mọi khó khăn."
+      },
+      {
+        "id": 5,
+        "question": "多少お金を借りてもいいですか。",
+        "options": [
+          "ただ",
+          "たまたま",
+          "多少",
+          "できるだけ"
+        ],
+        "answer": "多少",
+        "explain": "Một chút, một ít: Tôi có thể mượn một ít tiền được không?"
+      },
+      {
+        "id": 6,
+        "question": "彼女はフランス語がぺらぺらだ。",
+        "options": [
+          "ぺらぺら",
+          "よその",
+          "ぺこぺこ",
+          "そのまま"
+        ],
+        "answer": "ぺらぺら",
+        "explain": "Lưu loát: Cô ấy nói tiếng Pháp rất lưu loát."
+      },
+      {
+        "id": 7,
+        "question": "ようやく仕事が終わった。",
+        "options": [
+          "早めに",
+          "ようやく",
+          "絶対に",
+          "ただ"
+        ],
+        "answer": "ようやく",
+        "explain": "Cuối cùng thì: Cuối cùng thì công việc cũng đã xong."
+      },
+      {
+        "id": 8,
+        "question": "電気をそのままにして出かけた。",
+        "options": [
+          "ぺこぺこ",
+          "そのまま",
+          "あらゆる",
+          "たまたま"
+        ],
+        "answer": "そのまま",
+        "explain": "Cứ như vậy/giữ nguyên: Tôi đã đi ra ngoài mà vẫn để đèn như vậy (không tắt)."
+      },
+      {
+        "id": 9,
+        "question": "電話する時、ぺこぺこする。",
+        "options": [
+          "ぺらぺら",
+          "できるだけ",
+          "ぺこぺこ",
+          "多少"
+        ],
+        "answer": "ぺこぺこ",
+        "explain": "Khúm núm, đói meo mốc (trong ngữ cảnh này là khúm núm): Khi gọi điện thoại, tôi cứ khúm núm/cúi mình."
+      },
+      {
+        "id": 61,
+        "question": "早めに空港に着いて、チェックインを済ませた。",
+        "options": [
+          "早めに",
+          "ようやく",
+          "よその",
+          "ただ"
+        ],
+        "answer": "早めに",
+        "explain": "Sớm một chút: Tôi đã đến sân bay sớm một chút và làm xong thủ tục check-in."
+      },
+      {
+        "id": 10,
+        "question": "ただあなただけ届いて欲しい。",
+        "options": [
+          "たまたま",
+          "多少",
+          "ただ",
+          "そのまま"
+        ],
+        "answer": "ただ",
+        "explain": "Chỉ: Tôi chỉ muốn chỉ mình bạn hiểu thôi."
+      }
+    ]
+  },
+  {
+    "mondai": "問題 10",
+    "questions": [
+      {
+        "id": 1,
+        "question": "書店の前でたまたま友達に会った。",
+        "options": [
+          "あらゆる",
+          "たまたま",
+          "できるだけ",
+          "ぺらぺら"
+        ],
+        "answer": "たまたま",
+        "explain": "Tình cờ: Tôi đã tình cờ gặp bạn trước hiệu sách."
+      },
+      {
+        "id": 2,
+        "question": "できるだけ早く返事をください。",
+        "options": [
+          "できるだけ",
+          "ぺこぺこ",
+          "早めに",
+          "絶対に"
+        ],
+        "answer": "できるだけ",
+        "explain": "Cố gắng hết sức (trong khả năng có thể): Hãy cho tôi câu trả lời sớm nhất có thể nhé."
+      },
+      {
+        "id": 3,
+        "question": "よその国の文化を学ぶのは面白い。",
+        "options": [
+          "そのまま",
+          "よその",
+          "ようやく",
+          "たまたま"
+        ],
+        "answer": "よその",
+        "explain": "Của người khác/nơi khác: Việc học văn hóa của nước khác (nơi khác) rất thú vị."
+      },
+      {
+        "id": 4,
+        "question": "いきなり言われてもすぐに用意できない！",
+        "options": [
+          "いきなり",
+          "徐々に",
+          "たっぷり",
+          "ぜひ"
+        ],
+        "answer": "いきなり",
+        "explain": "Bất ngờ, đột ngột: Dẫu có bị nói một cách bất ngờ, tôi cũng không thể chuẩn bị ngay lập tức được!"
+      },
+      {
+        "id": 5,
+        "question": "言語能力は、人間の最も優れた能力の一つと見なされている。",
+        "options": [
+          "多少",
+          "最も",
+          "ますます",
+          "とうとう"
+        ],
+        "answer": "最も",
+        "explain": "Nhất: Năng lực ngôn ngữ được xem là một trong những năng lực ưu việt nhất của con người."
+      },
+      {
+        "id": 6,
+        "question": "ゆっくり、少しずつ変化する様子。",
+        "options": [
+          "はきはき",
+          "いちいち",
+          "徐々に",
+          "ばらばら"
+        ],
+        "answer": "徐々に",
+        "explain": "Dần dần, từng chút một: Trạng thái thay đổi chậm chậm, từng chút một."
+      },
+      {
+        "id": 7,
+        "question": "弟はコーヒーに砂糖をたっぷり入れる。",
+        "options": [
+          "たっぷり",
+          "非常",
+          "多少",
+          "いきなり"
+        ],
+        "answer": "たっぷり",
+        "explain": "Đầy đủ, nhiều: Em trai tôi cho rất nhiều đường vào cà phê."
+      },
+      {
+        "id": 8,
+        "question": "多少のわがまますなら許してあげる。",
+        "options": [
+          "徐々に",
+          "多少",
+          "ますます",
+          "ぜひ"
+        ],
+        "answer": "多少",
+        "explain": "Một chút: Nếu là một chút ích kỷ thì tôi sẽ tha thứ cho."
+      },
+      {
+        "id": 9,
+        "question": "非常に難しい問題だった。",
+        "options": [
+          "最も",
+          "たっぷり",
+          "非常に",
+          "いきなり"
+        ],
+        "answer": "非常に",
+        "explain": "Khẩn cấp, vô cùng: Đó là một vấn đề cực kỳ khó."
+      },
+      {
+        "id": 10,
+        "question": "日本語能力試験はますます難しいです。",
+        "options": [
+          "ますます",
+          "いちいち",
+          "ばらばら",
+          "徐々に"
+        ],
+        "answer": "ますます",
+        "explain": "Ngày càng: Kỳ thi năng lực tiếng Nhật ngày càng khó."
+      }
+    ]
+  },
+  {
+    "mondai": "問題 11",
+    "questions": [
+      {
+        "id": 11,
+        "question": "彼はとうとう目標を達成した。",
+        "options": [
+          "非常",
+          "最も",
+          "とうとう",
+          "はきはき"
+        ],
+        "answer": "とうとう",
+        "explain": "Cuối cùng: Anh ấy cuối cùng đã đạt được mục tiêu."
+      },
+      {
+        "id": 12,
+        "question": "花びらがはらはらと散っている。",
+        "options": [
+          "はきはき",
+          "ばらばら",
+          "たっぷり",
+          "ますます"
+        ],
+        "answer": "ばらばら",
+        "explain": "Tách ra, rơi lả tả: Những cánh hoa đang rơi lả tả (tách rời nhau)."
+      },
+      {
+        "id": 13,
+        "question": "彼女ははきはきと話すのが得意だ。",
+        "options": [
+          "はきはき",
+          "とうとう",
+          "多少",
+          "いきなり"
+        ],
+        "answer": "はきはき",
+        "explain": "Minh bạch, rõ ràng: Cô ấy giỏi nói chuyện một cách rõ ràng và dứt khoát."
+      },
+      {
+        "id": 14,
+        "question": "彼はいちいち私の間違いを指摘する。",
+        "options": [
+          "ますます",
+          "徐々に",
+          "いちいち",
+          "非常"
+        ],
+        "answer": "いちいち",
+        "explain": "Từng chút một, việc nhỏ nhặt: Anh ta cứ lần lượt chỉ ra lỗi sai của tôi (dù là việc nhỏ)."
+      },
+      {
+        "id": 15,
+        "question": "ぜひその映画を見てください。",
+        "options": [
+          "とうとう",
+          "最も",
+          "ばらばら",
+          "ぜひ"
+        ],
+        "answer": "ぜひ",
+        "explain": "Nhất định: Nhất định hãy xem bộ phim đó nhé."
+      }
+    ]
+  }
+]

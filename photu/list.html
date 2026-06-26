@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz List</title>
+    <style>
+        body {font-family: Arial, sans-serif; margin: 20px; background:#f7fafc;}
+        h1 {color: #2d3748;}
+        .kanji-section {margin-bottom: 30px;}
+        .kanji-title {font-size: 1.4rem; margin-top: 20px; color: #4a5568;}
+        .question-item {margin: 8px 0; padding: 8px; background:#fff; border:1px solid #e2e8f0; border-radius:4px;}
+    </style>
+</head>
+<body>
+    <h1>Quiz Mondai List</h1>
+    <button id="back-btn" style="margin-bottom:10px;" onclick="goBack()">Quay lại</button>
+    <div id="list-container">Loading...</div>
+
+    <script>
+        // Load data_kanji.json and render a list of kanji names.
+        // Clicking a kanji name will navigate to quiz_detail.html with a query param.
+        // Try to fetch the JSON data. If it fails (e.g., when opened via file://), fall back to a hard‑coded list.
+        // Updated to use the correct data file within this folder
+        fetch('data.json')
+            .then(r => r.json())
+            .then(data => {
+                renderList(data);
+            })
+            .catch(err => {
+                console.warn('Failed to load data_kanji.json, using fallback data.', err);
+                const fallbackData = [
+                    { kanji: '漢字1' },
+                    { kanji: '漢字2' }
+                ];
+                renderList(fallbackData);
+            });
+
+        function renderList(data) {
+            const container = document.getElementById('list-container');
+            container.innerHTML = '';
+            data.forEach(group => {
+                // Create a clickable link for each kanji (or mondai)
+                const kanjiText = group.mondai || group.kanji || '';
+                const link = document.createElement('a');
+                link.textContent = kanjiText;
+                // Navigate to the detail page (detail.html) with a query parameter
+                link.href = `detail.html?kanji=${encodeURIComponent(kanjiText)}`;
+                // Apply same visual styling as the previous non‑link divs
+                link.style.display = 'block';
+                link.style.margin = '4px 0';
+                link.style.fontSize = '1rem';
+                link.style.color = '#2b6cb0';
+                link.style.textDecoration = 'none';
+                link.addEventListener('mouseover', () => {
+                    link.style.textDecoration = 'underline';
+                });
+                link.addEventListener('mouseout', () => {
+                    link.style.textDecoration = 'none';
+                });
+                container.appendChild(link);
+            });
+        }
+        function goBack() {
+            // Navigate back in history (or to a default page if history is empty)
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                // Fallback to index or home if available
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+</body>
+</html>

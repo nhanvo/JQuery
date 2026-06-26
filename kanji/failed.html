@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách câu hỏi sai</title>
+    <style>
+        body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#f7fafc; padding:20px;}
+        h1 {color:#2d3748;}
+        table {width:100%; border-collapse:collapse; margin-top:20px;}
+        th, td {border:1px solid #e2e8f0; padding:8px; text-align:left;}
+        th {background:#edf2f7;}
+        .incorrect {background:#fed7d7;}
+        .btn {margin-top:20px; padding:10px 20px; background:#667eea; color:white; border:none; border-radius:5px; cursor:pointer;}
+    </style>
+</head>
+<body>
+    <h1>Danh sách các câu hỏi trả lời sai</h1>
+    <div id="failed-container"></div>
+    <button class="btn" onclick="goBack()">Quay lại kết quả</button>
+    <script>
+        // Retrieve the failed results saved by result.html
+        function loadFailed() {
+            const raw = localStorage.getItem('failedQuizResult');
+            if (!raw) {
+                document.getElementById('failed-container').innerHTML = '<p>Không có câu hỏi nào sai.</p>';
+                return;
+            }
+            const failed = JSON.parse(raw);
+            if (!failed.length) {
+                document.getElementById('failed-container').innerHTML = '<p>Không có câu hỏi nào sai.</p>';
+                return;
+            }
+            let html = '<table><tr><th>#</th><th>Câu hỏi</th><th>Chọn</th><th>Đáp án đúng</th></tr>';
+            failed.forEach((r, idx) => {
+                html += `<tr class="incorrect"><td>${idx + 1}</td><td>${r.question}</td><td>${r.selected}</td><td>${r.correct}</td></tr>`;
+            });
+            html += '</table>';
+            document.getElementById('failed-container').innerHTML = html;
+        }
+        function goBack() {
+            // Return to the main result page
+            window.location.href = 'result.html';
+        }
+        loadFailed();
+    </script>
+</body>
+</html>

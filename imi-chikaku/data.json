@@ -1,0 +1,1252 @@
+[
+  {
+    "mondai": "問題４-1",
+    "questions": [
+      {
+        "id": 1,
+        "question": "父から<u>おこづかい</u>をもらいました。",
+        "options": [
+          "お菓子",
+          "お金",
+          "おもちゃ",
+          "おみやげ"
+        ],
+        "answer": "お金",
+        "explain": "おこづかい (Tiền tiêu vặt) có nghĩa tương đương với お金 (Tiền)."
+      },
+      {
+        "id": 2,
+        "question": "安部さんは<u>だまって</u>いました。",
+        "options": [
+          "何も話さないで",
+          "何も食べないで",
+          "勉強しないで",
+          "寝ないで"
+        ],
+        "answer": "何も話さないで",
+        "explain": "だまって (Im lặng) có nghĩa là không nói gì cả (何も話さないで)."
+      },
+      {
+        "id": 3,
+        "question": "部屋を<u>整理</u>した。",
+        "options": [
+          "調べた",
+          "借りた",
+          "片付けた",
+          "直した"
+        ],
+        "answer": "片付けた",
+        "explain": "整理する (Sắp xếp, chỉnh lý) có nghĩa là dọn dẹp (片付ける) cho ngăn nắp."
+      },
+      {
+        "id": 4,
+        "question": "彼は目的達成には<u>手段</u>を選ばない。",
+        "options": [
+          "連絡",
+          "楽しみ",
+          "やり方",
+          "理由"
+        ],
+        "answer": "やり方",
+        "explain": "手段 (Thủ đoạn, cách thức) có nghĩa là cách làm, phương pháp (やり方)."
+      },
+      {
+        "id": 5,
+        "question": "そのテレビドラマは<u>退屈</u>だった。",
+        "options": [
+          "楽しかった",
+          "つまらなかった",
+          "忙しかった",
+          "静かだった"
+        ],
+        "answer": "つまらなかった",
+        "explain": "退屈 (Tẻ nhạt, chán ngắt) có nghĩa tương đương với つまらない (Chán)."
+      },
+      {
+        "id": 6,
+        "question": "食事代は<u>約</u>5千円だった。",
+        "options": [
+          "だいたい",
+          "ちょうど",
+          "5千円以上",
+          "5千円以下"
+        ],
+        "answer": "だいたい",
+        "explain": "約 (Khoảng, xấp xỉ) có nghĩa là không chính xác hoàn toàn, tương đương với だいたい."
+      },
+      {
+        "id": 7,
+        "question": "あすは<u>絶対</u>来てください。",
+        "options": [
+          "いつでも",
+          "すぐに",
+          "また",
+          "必ず"
+        ],
+        "answer": "必ず",
+        "explain": "絶対 (Tuyệt đối) có nghĩa là nhất định phải làm (必ず)."
+      },
+      {
+        "id": 8,
+        "question": "夜空に星が<u>かがやい</u>ています。",
+        "options": [
+          "止まって",
+          "揺れて",
+          "汚れて",
+          "光って"
+        ],
+        "answer": "光って",
+        "explain": "かがやく (Tỏa sáng) có nghĩa là phát ra ánh sáng (光る)."
+      },
+      {
+        "id": 9,
+        "question": "パーティーの食べ物が<u>あまり</u>ました。",
+        "options": [
+          "多すぎて残りました",
+          "少し足りませんでした",
+          "とてもおいしかったです",
+          "そんなにおいしくなかったです"
+        ],
+        "answer": "多すぎて残りました",
+        "explain": "あまる (Thừa ra) có nghĩa là sau khi dùng xong vẫn còn dư lại (残る)."
+      },
+      {
+        "id": 10,
+        "question": "彼は<u>まったく</u>お酒を飲みません。",
+        "options": [
+          "あまり",
+          "ぜんぜん",
+          "まだ",
+          "もう"
+        ],
+        "answer": "ぜんぜん",
+        "explain": "まったく (Hoàn toàn) khi đi với câu phủ định có nghĩa là hoàn toàn không (ぜんぜん)."
+      }
+    ]
+  },
+  {
+    "mondai": "問題４-2",
+    "questions": [
+      {
+        "id": 1,
+        "question": "午後アンケートを<u>回収</u>します。",
+        "options": [
+          "あつめます",
+          "おくります",
+          "わたします",
+          "すてます"
+        ],
+        "answer": "あつめます",
+        "explain": "Chúng tôi sẽ thu hồi bảng câu hỏi vào buổi chiều."
+      },
+      {
+        "id": 2,
+        "question": "公演前はみんな<u>不安</u>だった。",
+        "options": [
+          "親切",
+          "上品",
+          "危険",
+          "心配"
+        ],
+        "answer": "心配",
+        "explain": "Trước buổi biểu diễn, mọi người đều lo lắng."
+      },
+      {
+        "id": 3,
+        "question": "もしなにかあったら早めに<u>報告</u>してください。",
+        "options": [
+          "頼んで",
+          "知らせて",
+          "たずねて",
+          "さがして"
+        ],
+        "answer": "知らせて",
+        "explain": "Nếu có chuyện gì xảy ra, hãy thông báo sớm cho tôi."
+      },
+      {
+        "id": 4,
+        "question": "毎朝<u>トレーニング</u>をしている。",
+        "options": [
+          "準備",
+          "競争",
+          "質問",
+          "練習"
+        ],
+        "answer": "練習",
+        "explain": "Tôi tập luyện mỗi sáng."
+      },
+      {
+        "id": 5,
+        "question": "わたしは<u>団体</u>で行動した。",
+        "options": [
+          "一人で",
+          "グループで",
+          "歩いて",
+          "タクシーで"
+        ],
+        "answer": "グループで",
+        "explain": "Tôi đã hoạt động theo nhóm."
+      },
+      {
+        "id": 6,
+        "question": "川村さんも<u>協力</u>してください。",
+        "options": [
+          "急いで",
+          "決めて",
+          "手伝って",
+          "がんばって"
+        ],
+        "answer": "手伝って",
+        "explain": "Anh Kawamura hãy cùng giúp đỡ nhé."
+      },
+      {
+        "id": 7,
+        "question": "佐藤さんに<u>どなられた</u>。",
+        "options": [
+          "大声で笑われた",
+          "小声で笑われた",
+          "大声で怒られた",
+          "小声で怒られた"
+        ],
+        "answer": "大声で怒られた",
+        "explain": "Tôi bị anh Sato quát mắng (lớn tiếng)."
+      },
+      {
+        "id": 8,
+        "question": "<u>まぶしくて</u>看板の字が読めません。",
+        "options": [
+          "小さすぎて",
+          "暗すぎて",
+          "薄すぎて",
+          "明るすぎて"
+        ],
+        "answer": "明るすぎて",
+        "explain": "Vì chói quá nên tôi không đọc được chữ trên biển hiệu."
+      },
+      {
+        "id": 9,
+        "question": "新生活に不安は<u>当然</u>あった。",
+        "options": [
+          "いろいろ",
+          "少し",
+          "もちろん",
+          "いつも"
+        ],
+        "answer": "もちろん",
+        "explain": "Đương nhiên là có những lo lắng trong cuộc sống mới."
+      },
+      {
+        "id": 10,
+        "question": "今日のパーティーは<u>延期</u>になった。",
+        "options": [
+          "後の別の日にやることになった",
+          "始まるのが予定より早くなった",
+          "終わるのが予定より遅くなった",
+          "後の別の日に続けることになった"
+        ],
+        "answer": "後の別の日にやることになった",
+        "explain": "Bữa tiệc hôm nay đã bị hoãn (sẽ tổ chức vào một ngày khác)."
+      }
+    ]
+  },
+  {
+    "mondai": "問題４-3",
+    "questions": [
+      {
+        "id": 1,
+        "question": "これは<u>楽な</u>仕事です。",
+        "options": [
+          "大変",
+          "危険",
+          "安全",
+          "簡単"
+        ],
+        "answer": "簡単",
+        "explain": "Đây là một công việc nhàn hạ (dễ dàng)."
+      },
+      {
+        "id": 2,
+        "question": "なべの中にはスープが<u>多少</u>残っている。",
+        "options": [
+          "とても",
+          "ちょっと",
+          "ときどき",
+          "いつも"
+        ],
+        "answer": "ちょっと",
+        "explain": "Trong nồi còn sót lại một chút súp."
+      },
+      {
+        "id": 3,
+        "question": "あそこは<u>横断禁止</u>です。",
+        "options": [
+          "渡ってはいけません",
+          "座ってはいけません",
+          "入ってはいけません",
+          "走ってはいけません"
+        ],
+        "answer": "渡ってはいけません",
+        "explain": "Chỗ đó cấm băng qua đường."
+      },
+      {
+        "id": 4,
+        "question": "わたしの<u>めい</u>は外国に住んでいる。",
+        "options": [
+          "両親の兄",
+          "両親の姉",
+          "兄弟の息子",
+          "兄弟の娘"
+        ],
+        "answer": "兄弟の娘",
+        "explain": "Cháu gái (con của anh chị em) của tôi đang sống ở nước ngoài."
+      },
+      {
+        "id": 5,
+        "question": "彼の話は<u>ようやく</u>終わった。",
+        "options": [
+          "やっぱり",
+          "なぜか",
+          "やっと",
+          "とても"
+        ],
+        "answer": "やっと",
+        "explain": "Câu chuyện của anh ấy cuối cùng thì cũng đã kết thúc."
+      },
+      {
+        "id": 6,
+        "question": "彼女は<u>逆</u>のほうに行ったよ。",
+        "options": [
+          "反対",
+          "先",
+          "遠く",
+          "奥"
+        ],
+        "answer": "反対",
+        "explain": "Cô ấy đã đi về hướng ngược lại rồi."
+      },
+      {
+        "id": 7,
+        "question": "テレビで日本語を<u>まなんでいる</u>。",
+        "options": [
+          "紹介している",
+          "たくさん飾っている",
+          "勉強している",
+          "たくさん持っている"
+        ],
+        "answer": "勉強している",
+        "explain": "Tôi đang học tiếng Nhật qua truyền hình."
+      },
+      {
+        "id": 8,
+        "question": "話はそれで<u>おしまい</u>です。",
+        "options": [
+          "初めて",
+          "終わり",
+          "成功",
+          "簡単"
+        ],
+        "answer": "終わり",
+        "explain": "Câu chuyện đến đây là kết thúc."
+      },
+      {
+        "id": 9,
+        "question": "急いで<u>済まして</u>ください。",
+        "options": [
+          "使わせて",
+          "終わらせて",
+          "見せて",
+          "帰らせて"
+        ],
+        "answer": "終わらせて",
+        "explain": "Hãy làm cho xong nhanh đi."
+      },
+      {
+        "id": 10,
+        "question": "人から聞いた話を<u>そのまま</u>語しました。",
+        "options": [
+          "何も変えないで",
+          "自分のことばで",
+          "急いで",
+          "少し後で"
+        ],
+        "answer": "何も変えないで",
+        "explain": "Tôi đã kể lại câu chuyện nghe được từ người khác một cách nguyên vẹn (không thay đổi gì)."
+      }
+    ]
+  },
+  {
+    "mondai": "問題４-4",
+    "questions": [
+      {
+        "id": 1,
+        "question": "野菜の<u>価格</u>が上がった。",
+        "options": [
+          "結果",
+          "返事",
+          "都合",
+          "値段"
+        ],
+        "answer": "値段",
+        "explain": "Giá của rau củ đã tăng."
+      },
+      {
+        "id": 2,
+        "question": "先週、<u>塾をサボって</u>しまった。",
+        "options": [
+          "遊びたくて塾をやめてしまった",
+          "遊びたくて塾を休んでしまった",
+          "病気になって塾をやめてしまった",
+          "病気になって塾を休んでしまった"
+        ],
+        "answer": "遊びたくて塾を休んでしまった",
+        "explain": "Tuần trước, tôi đã trốn (nghỉ) học thêm vì muốn đi chơi."
+      },
+      {
+        "id": 3,
+        "question": "リンゴ、ナシ、そのほか<u>さまざまな</u>種類のくだものがある。",
+        "options": [
+          "とくべつな",
+          "すばらしい",
+          "あたらしい",
+          "いろいろな"
+        ],
+        "answer": "いろいろな",
+        "explain": "Có táo, lê và nhiều loại trái cây khác nữa."
+      },
+      {
+        "id": 4,
+        "question": "原田さんに<u>指導</u>してもらった。",
+        "options": [
+          "教えて",
+          "探して",
+          "調べて",
+          "決めて"
+        ],
+        "answer": "教えて",
+        "explain": "Tôi đã được anh Harada chỉ đạo (dạy bảo) cho."
+      },
+      {
+        "id": 5,
+        "question": "彼女は日本語が<u>ぺらぺら</u>です。",
+        "options": [
+          "あまり書けません",
+          "上手に書けます",
+          "あまり話せません",
+          "上手に話せます"
+        ],
+        "answer": "上手に話せます",
+        "explain": "Cô ấy nói tiếng Nhật rất trôi chảy."
+      },
+      {
+        "id": 6,
+        "question": "その馬は<u>全力</u>で<u>駆けて</u>きた。",
+        "options": [
+          "走って",
+          "登って",
+          "入って",
+          "集まって"
+        ],
+        "answer": "走って",
+        "explain": "Con ngựa đó đã chạy đến với toàn bộ sức lực."
+      },
+      {
+        "id": 7,
+        "question": "彼は<u>あらゆる</u>機会を利用した。",
+        "options": [
+          "一つの",
+          "すべての",
+          "難しい",
+          "簡単な"
+        ],
+        "answer": "すべての",
+        "explain": "Anh ấy đã tận dụng mọi cơ hội."
+      },
+      {
+        "id": 8,
+        "question": "みな彼の話を<u>信じて</u>いる。",
+        "options": [
+          "面白いと思っている",
+          "面白くないと思っている",
+          "本当だと思っている",
+          "本当じゃないと思っている"
+        ],
+        "answer": "本当だと思っている",
+        "explain": "Mọi người đều tin vào câu chuyện của anh ấy."
+      },
+      {
+        "id": 9,
+        "question": "そのチームが負けたと知って<u>がっかりした</u>。",
+        "options": [
+          "残念だと思った",
+          "うれしかった",
+          "驚いた",
+          "安心した"
+        ],
+        "answer": "残念だと思った",
+        "explain": "Tôi đã rất thất vọng khi biết đội đó thua."
+      },
+      {
+        "id": 10,
+        "question": "ここではそういう<u>決まり</u>になっているんだ。",
+        "options": [
+          "料金",
+          "技術",
+          "結果",
+          "規則"
+        ],
+        "answer": "規則",
+        "explain": "Ở đây quy định là như vậy đấy."
+      }
+    ]
+  },
+  {
+    "mondai": "問題４-5",
+    "questions": [
+      {
+        "id": 1,
+        "question": "この<u>分</u>なら合格できそうだ。",
+        "options": [
+          "アイデア",
+          "イメージ",
+          "プラン",
+          "ペース"
+        ],
+        "answer": "ペース",
+        "explain": "Với nhịp độ này, có vẻ như có thể đỗ."
+      },
+      {
+        "id": 2,
+        "question": "当ホテルは和食の<u>用意</u>もございます。",
+        "options": [
+          "準備",
+          "用途",
+          "予約",
+          "売上"
+        ],
+        "answer": "準備",
+        "explain": "Khách sạn chúng tôi cũng có chuẩn bị đồ ăn Nhật."
+      },
+      {
+        "id": 3,
+        "question": "<u>差し支え</u>がなければ、お名前と住所をここに書きしてください。",
+        "options": [
+          "仕方",
+          "変更",
+          "問題",
+          "不平"
+        ],
+        "answer": "記入",
+        "explain": "Nếu không có vấn đề gì, hãy điền tên và địa chỉ của bạn vào đây."
+      },
+      {
+        "id": 4,
+        "question": "彼の出席は予想外の<u>できごと</u>だった。",
+        "options": [
+          "事件",
+          "条件",
+          "期待",
+          "期限"
+        ],
+        "answer": "事件",
+        "explain": "Sự có mặt của anh ấy là một sự việc nằm ngoài dự kiến."
+      },
+      {
+        "id": 5,
+        "question": "このナイフは肉を切るのにも<u>もちいる</u>。",
+        "options": [
+          "借りる",
+          "向く",
+          "加える",
+          "使う"
+        ],
+        "answer": "使う",
+        "explain": "Con dao này cũng được sử dụng để cắt thịt."
+      },
+      {
+        "id": 6,
+        "question": "警察の警戒が<u>ゆるかった</u>ようだ。",
+        "options": [
+          "とんでもなかった",
+          "きびしくなかった",
+          "やさしくなかった",
+          "しかたがなかった"
+        ],
+        "answer": "しかたがなかった",
+        "explain": "Có vẻ như sự cảnh giác của cảnh sát đã lỏng lẻo."
+      },
+      {
+        "id": 7,
+        "question": "その金はみんなで<u>公平</u>に分けましょう。",
+        "options": [
+          "絶対に",
+          "幸福に",
+          "均等に",
+          "次第に"
+        ],
+        "answer": "均等に",
+        "explain": "Hãy cùng chia đều số tiền đó cho mọi người."
+      },
+      {
+        "id": 8,
+        "question": "その雑誌は<u>ただ</u>ですか。",
+        "options": [
+          "無料",
+          "有料",
+          "料金",
+          "料理"
+        ],
+        "answer": "ただ",
+        "explain": "Cuốn tạp chí đó có miễn phí không?"
+      },
+      {
+        "id": 9,
+        "question": "彼は学生運動に<u>くわわった</u>。",
+        "options": [
+          "記入した",
+          "参考した",
+          "加入した",
+          "参加した"
+        ],
+        "answer": "くわわった",
+        "explain": "Anh ấy đã tham gia vào phong trào sinh viên."
+      },
+      {
+        "id": 10,
+        "question": "彼は<u>次々</u>に珍しい発明をして、世界をおどろかせている。",
+        "options": [
+          "だんだん",
+          "どんどん",
+          "これから",
+          "いつでも"
+        ],
+        "answer": "どんどん",
+        "explain": "Anh ấy liên tiếp tạo ra những phát minh mới lạ, làm thế giới kinh ngạc."
+      }
+    ]
+  },
+  {
+    "mondai": "問題４-6",
+    "questions": [
+      {
+        "id": 1,
+        "question": "山田さんの歌は<u>見事</u>だった。",
+        "options": [
+          "きびしかった",
+          "ただしかった",
+          "すばらしかった",
+          "めずらしかった"
+        ],
+        "answer": "すばらしかった",
+        "explain": "Bài hát của anh Yamada thật tuyệt vời."
+      },
+      {
+        "id": 2,
+        "question": "オートバイの<u>オイル</u>を買ってきました。",
+        "options": [
+          "ぶひん",
+          "くうき",
+          "ざせき",
+          "あぶら"
+        ],
+        "answer": "あぶら",
+        "explain": "Tôi đã mua dầu cho xe máy."
+      },
+      {
+        "id": 3,
+        "question": "運転手はエンジンの<u>テスト</u>をした。",
+        "options": [
+          "様子",
+          "具合",
+          "検査",
+          "都合"
+        ],
+        "answer": "検査",
+        "explain": "Người lái xe đã kiểm tra động cơ."
+      },
+      {
+        "id": 4,
+        "question": "森さんは<u>おしゃべりな</u>人です。",
+        "options": [
+          "よく飲む",
+          "よく食べる",
+          "よく話す",
+          "よく怒る"
+        ],
+        "answer": "よく話す",
+        "explain": "Anh Mori là người hay nói chuyện."
+      },
+      {
+        "id": 5,
+        "question": "<u>おそらく</u>この企画はうまくいかないだろう。",
+        "options": [
+          "たしかに",
+          "もちろん",
+          "たとえ",
+          "たぶん"
+        ],
+        "answer": "たぶん",
+        "explain": "Có lẽ kế hoạch này sẽ không thành công."
+      },
+      {
+        "id": 6,
+        "question": "祖父はすっかり<u>元気</u>になった。",
+        "options": [
+          "健康を回復した",
+          "体力をつけた",
+          "病気になった",
+          "風邪を引いた"
+        ],
+        "answer": "健康を回復した",
+        "explain": "Ông tôi đã hoàn toàn khỏe mạnh trở lại."
+      },
+      {
+        "id": 7,
+        "question": "証明書の提出はコピーで<u>さしつかえない</u>。",
+        "options": [
+          "かまわない",
+          "ありがたい",
+          "いけない",
+          "しかたがない"
+        ],
+        "answer": "かまわない",
+        "explain": "Việc nộp giấy chứng nhận bằng bản sao là không vấn đề gì."
+      },
+      {
+        "id": 8,
+        "question": "試験に落ちたと聞いて<u>がっかり</u>した。",
+        "options": [
+          "希望",
+          "落第",
+          "失望",
+          "期待"
+        ],
+        "answer": "失望",
+        "explain": "Tôi đã rất thất vọng khi nghe tin mình trượt kỳ thi."
+      },
+      {
+        "id": 9,
+        "question": "このひもを<u>ぐっと</u>引いてください。",
+        "options": [
+          "力を入れて",
+          "口をはさまないで",
+          "形を変えて",
+          "手をふれないで"
+        ],
+        "answer": "力を入れて",
+        "explain": "Hãy kéo mạnh sợi dây này."
+      },
+      {
+        "id": 10,
+        "question": "列車は<u>まもなく</u>京都に到着します。",
+        "options": [
+          "いずれ",
+          "ほとんど",
+          "もうすぐ",
+          "やっと"
+        ],
+        "answer": "もうすぐ",
+        "explain": "Đoàn tàu sắp sửa đến Kyoto."
+      }
+    ]
+  },
+  {
+    "mondai": "問題４-7",
+    "questions": [
+      {
+        "id": 1,
+        "question": "わたしは<u>あやしい</u>者ではありません。",
+        "options": [
+          "まじめな",
+          "ほがらかな",
+          "不審な",
+          "誠実な"
+        ],
+        "answer": "不審な",
+        "explain": "Tôi không phải là kẻ đáng nghi."
+      },
+      {
+        "id": 2,
+        "question": "このように押しかけて、<u>すまない</u>と思っています。",
+        "options": [
+          "もうしわけない",
+          "かなしい",
+          "はずかしい",
+          "くやしい"
+        ],
+        "answer": "もうしわけない",
+        "explain": "Tôi xin lỗi vì đã đường đột ghé thăm như thế này."
+      },
+      {
+        "id": 3,
+        "question": "子どもをしかるときはいきなり<u>どなり</u>つけたりしないこと。",
+        "options": [
+          "初めに",
+          "うっかり",
+          "いつのまにか",
+          "突然"
+        ],
+        "answer": "突然",
+        "explain": "Khi mắng trẻ con, không nên đột ngột quát tháo."
+      },
+      {
+        "id": 4,
+        "question": "今日はこれまでの人生でもっとも幸せな一日です。",
+        "options": [
+          "わりに",
+          "ずっと",
+          "最近",
+          "一番"
+        ],
+        "answer": "一番",
+        "explain": "Hôm nay là ngày hạnh phúc nhất trong cuộc đời tôi cho đến nay."
+      },
+      {
+        "id": 5,
+        "question": "貴社の新製品の<u>サンプル</u>を送ってください。",
+        "options": [
+          "見本",
+          "資料",
+          "材料",
+          "価格"
+        ],
+        "answer": "見本",
+        "explain": "Hãy gửi cho tôi mẫu sản phẩm mới của quý công ty."
+      },
+      {
+        "id": 6,
+        "question": "早く手術をしないと、命が<u>あぶない</u>。",
+        "options": [
+          "けわしい",
+          "あやうい",
+          "はげしい",
+          "みにくい"
+        ],
+        "answer": "あやうい",
+        "explain": "Nếu không phẫu thuật sớm thì tính mạng sẽ nguy hiểm."
+      },
+      {
+        "id": 7,
+        "question": "新しい家が<u>気に入った</u>ようですね。",
+        "options": [
+          "おかしくなった",
+          "やさしくなった",
+          "いやになった",
+          "すきになった"
+        ],
+        "answer": "すきになった",
+        "explain": "Có vẻ như bạn đã ưng ý ngôi nhà mới rồi nhỉ."
+      },
+      {
+        "id": 8,
+        "question": "うまい話には<u>気をつけた</u>ほうがいいですよ。",
+        "options": [
+          "中止した",
+          "下車した",
+          "注意した",
+          "変更した"
+        ],
+        "answer": "注意した",
+        "explain": "Bạn nên cẩn thận với những lời đề nghị quá tốt."
+      },
+      {
+        "id": 9,
+        "question": "その話は近所の<u>ほうぼう</u>でうわさされている。",
+        "options": [
+          "あちこち",
+          "あれこれ",
+          "うろうろ",
+          "まごまご"
+        ],
+        "answer": "あちこち",
+        "explain": "Câu chuyện đó đang được đồn đại khắp nơi trong khu phố."
+      },
+      {
+        "id": 10,
+        "question": "わたしの不用意な発言が口論の<u>契機</u>となった。",
+        "options": [
+          "ささえ",
+          "すくい",
+          "きっかけ",
+          "つながり"
+        ],
+        "answer": "きっかけ",
+        "explain": "Lời phát biểu thiếu cẩn trọng của tôi đã trở thành khởi nguồn cho cuộc cãi vã."
+      }
+    ]
+  },
+  {
+    "mondai": "問題４-8",
+    "questions": [
+      {
+        "id": 1,
+        "question": "あの教授の講演はいつも<u>中身が濃い。</u>",
+        "options": [
+          "質問が多い",
+          "質問が少ない",
+          "内容がある",
+          "内容がない"
+        ],
+        "answer": "内容がある",
+        "explain": "Bài giảng của vị giáo sư đó lúc nào cũng có nội dung sâu sắc."
+      },
+      {
+        "id": 2,
+        "question": "<u>このあいだ</u>は楽しかったね。",
+        "options": [
+          "先日",
+          "全日",
+          "さっき",
+          "ゆうべ"
+        ],
+        "answer": "先日",
+        "explain": "Mấy ngày hôm trước thật là vui nhỉ."
+      },
+      {
+        "id": 3,
+        "question": "息子を東京の大学にやるには<u>最低</u>15万円はかかる。",
+        "options": [
+          "おもに",
+          "少なくとも",
+          "ただちに",
+          "かならずしも"
+        ],
+        "answer": "少なくとも",
+        "explain": "Để cho con trai đi học đại học ở Tokyo, ít nhất phải mất 15 vạn yên."
+      },
+      {
+        "id": 4,
+        "question": "仕事は5時に<u>上がる</u>から待ってて。",
+        "options": [
+          "しまう",
+          "やむ",
+          "終わる",
+          "閉まる"
+        ],
+        "answer": "終わる",
+        "explain": "Công việc sẽ kết thúc (上がる) lúc 5 giờ nên hãy đợi nhé."
+      },
+      {
+        "id": 5,
+        "question": "旅行の<u>支度</u>ができました。",
+        "options": [
+          "募集",
+          "両替",
+          "日程",
+          "準備"
+        ],
+        "answer": "準備",
+        "explain": "Đã chuẩn bị xong cho chuyến du lịch rồi."
+      },
+      {
+        "id": 6,
+        "question": "バケツに水を<u>いっぱい</u>入れた。",
+        "options": [
+          "すこし",
+          "たくさん",
+          "だいたい",
+          "なるべく"
+        ],
+        "answer": "たくさん",
+        "explain": "Đã đổ thật nhiều (いっぱい) nước vào cái xô."
+      },
+      {
+        "id": 7,
+        "question": "彼の言うことが<u>さっぱり</u>わからなかった。",
+        "options": [
+          "ただちに",
+          "つねに",
+          "さっそく",
+          "まったく"
+        ],
+        "answer": "まったく",
+        "explain": "Tôi hoàn toàn (さっぱり) không hiểu những gì anh ấy nói."
+      },
+      {
+        "id": 8,
+        "question": "彼は京都の地理に<u>明るい</u>。",
+        "options": [
+          "たのしい",
+          "うれしい",
+          "くわしい",
+          "するどい"
+        ],
+        "answer": "くわしい",
+        "explain": "Anh ấy rất am hiểu (明るい) về địa lý của Kyoto."
+      },
+      {
+        "id": 9,
+        "question": "答えが間違っているから、もう一度<u>検討</u>してみなさい。",
+        "options": [
+          "話して",
+          "数えて",
+          "答えて",
+          "考えて"
+        ],
+        "answer": "考えて",
+        "explain": "Vì câu trả lời sai rồi nên hãy thử suy nghĩ lại một lần nữa."
+      },
+      {
+        "id": 10,
+        "question": "何か<u>いる</u>ものがあったら言ってください。",
+        "options": [
+          "必要な",
+          "大変な",
+          "本当な",
+          "苦手な"
+        ],
+        "answer": "必要な",
+        "explain": "Nếu có thứ gì cần thiết (いる) thì hãy nói cho tôi biết nhé."
+      }
+    ]
+  },
+  {
+    "mondai": "問題４-9",
+    "questions": [
+      {
+        "id": 1,
+        "question": "映画はすっかり<u>嫌いになった。</u>",
+        "options": [
+          "順番を待った",
+          "関心を持った",
+          "関係を深めた",
+          "興味を失った"
+        ],
+        "answer": "興味を失った",
+        "explain": "Ghét/không còn thích phim nữa, tức là mất hứng thú."
+      },
+      {
+        "id": 2,
+        "question": "彼は近所がうるさいと警察に<u>もんく</u>を言った。",
+        "options": [
+          "用意",
+          "支度",
+          "不平",
+          "文章"
+        ],
+        "answer": "不平",
+        "explain": "Nói lời phàn nàn/bất bình (もんく) với cảnh sát."
+      },
+      {
+        "id": 3,
+        "question": "彼のこの小説はなかなかおもしろいが、<u>こく</u>がない。",
+        "options": [
+          "高み",
+          "重み",
+          "強み",
+          "深み"
+        ],
+        "answer": "深み",
+        "explain": "Tiểu thuyết này thú vị nhưng không có chiều sâu."
+      },
+      {
+        "id": 4,
+        "question": "わたしは<u>決して</u>うそは言いません。",
+        "options": [
+          "相変わらず",
+          "絶対に",
+          "突然",
+          "次第に"
+        ],
+        "answer": "絶対に",
+        "explain": "Tuyệt đối không nói dối."
+      },
+      {
+        "id": 5,
+        "question": "ひさしぶりの旅行、2人で<u>せいぜい</u>楽しんでらっしゃい。",
+        "options": [
+          "つねに",
+          "できるだけ",
+          "そっくり",
+          "かならずしも"
+        ],
+        "answer": "できるだけ",
+        "explain": "Hãy tận hưởng hết mức có thể."
+      },
+      {
+        "id": 6,
+        "question": "まだ<u>行き先</u>は決めていません。",
+        "options": [
+          "事務所",
+          "営業所",
+          "目的地",
+          "名産地"
+        ],
+        "answer": "目的地",
+        "explain": "Chưa quyết định điểm đến."
+      },
+      {
+        "id": 7,
+        "question": "警官に<u>どなられた</u>。",
+        "options": [
+          "おしえられた",
+          "かこまれた",
+          "ほめられた",
+          "しかられた"
+        ],
+        "answer": "しかられた",
+        "explain": "Bị quát tháo/mắng bởi cảnh sát."
+      },
+      {
+        "id": 8,
+        "question": "また<u>ミス</u>しました。",
+        "options": [
+          "失敗",
+          "再開",
+          "成功",
+          "文句"
+        ],
+        "answer": "失敗",
+        "explain": "Lại phạm lỗi/thất bại."
+      },
+      {
+        "id": 9,
+        "question": "仕入れの<u>コスト</u>が高い。",
+        "options": [
+          "ねだん",
+          "おもて",
+          "つなぎ",
+          "あぶら"
+        ],
+        "answer": "ねだん",
+        "explain": "Chi phí (giá) nhập hàng cao."
+      },
+      {
+        "id": 10,
+        "question": "今日見た映画に印象的な<u>シーン</u>がいくつかあった。",
+        "options": [
+          "見物",
+          "見学",
+          "場面",
+          "場合"
+        ],
+        "answer": "場面",
+        "explain": "Có vài cảnh (scene) ấn tượng trong bộ phim đã xem hôm nay."
+      }
+    ]
+  },
+  {
+    "mondai": "問題４-10",
+    "questions": [
+      {
+        "id": 1,
+        "question": "月20万円の手取りでは、とても家族4人の生活には<u>たりない。</u>",
+        "options": [
+          "充分だ",
+          "不足だ",
+          "一杯だ",
+          "満足だ"
+        ],
+        "answer": "不足だ",
+        "explain": "Với mức thu nhập thực lĩnh 20 vạn yên mỗi tháng, không đủ để chi trả cho cuộc sống gia đình 4 người."
+      },
+      {
+        "id": 2,
+        "question": "それを持っていくのに何か<u>容器</u>が必要です。",
+        "options": [
+          "ケース",
+          "ゲーム",
+          "リーダー",
+          "セーター"
+        ],
+        "answer": "ケース",
+        "explain": "Để mang cái đó đi, cần phải có vật chứa (vỏ/hộp)."
+      },
+      {
+        "id": 3,
+        "question": "わたしはスポーツにあまり<u>興味</u>がない。",
+        "options": [
+          "習慣",
+          "物語",
+          "関心",
+          "条件"
+        ],
+        "answer": "関心",
+        "explain": "Tôi không mấy quan tâm đến thể thao."
+      },
+      {
+        "id": 4,
+        "question": "<u>実は</u>お願いがあってお聞きしました。",
+        "options": [
+          "結局は",
+          "素直に",
+          "本当は",
+          "非常に"
+        ],
+        "answer": "本当は",
+        "explain": "Thực ra là có một việc muốn nhờ anh/chị."
+      },
+      {
+        "id": 5,
+        "question": "ホテルの予約を電話で<u>確認</u>してください。",
+        "options": [
+          "変えて",
+          "調べて",
+          "行って",
+          "頼んで"
+        ],
+        "answer": "調べて",
+        "explain": "Hãy kiểm tra (tìm hiểu/xác nhận) đặt phòng khách sạn qua điện thoại."
+      },
+      {
+        "id": 6,
+        "question": "5人の子どもを養わなければならないので生活は<u>くるしい。</u>",
+        "options": [
+          "むずかしい",
+          "やさしい",
+          "うらやましい",
+          "はずかしい"
+        ],
+        "answer": "むずかしい",
+        "explain": "Vì phải nuôi 5 người con nên cuộc sống rất khó khăn."
+      },
+      {
+        "id": 7,
+        "question": "この試合には<u>どうしても</u>勝ちたい。",
+        "options": [
+          "かならずしも",
+          "たぶん",
+          "なるべく",
+          "ぜひ"
+        ],
+        "answer": "ぜひ",
+        "explain": "Tôi nhất định (rất muốn) thắng trận đấu này."
+      },
+      {
+        "id": 8,
+        "question": "部屋を<u>清潔に</u>してください。",
+        "options": [
+          "すずしく",
+          "こいしく",
+          "単純に",
+          "きれいに"
+        ],
+        "answer": "きれいに",
+        "explain": "Hãy giữ phòng sạch sẽ."
+      },
+      {
+        "id": 9,
+        "question": "彼はその金を<u>残らず</u>使った。",
+        "options": [
+          "大部分",
+          "全部",
+          "半分",
+          "一部"
+        ],
+        "answer": "全部",
+        "explain": "Anh ấy đã dùng toàn bộ (không chừa lại tí nào) số tiền đó."
+      },
+      {
+        "id": 10,
+        "question": "この試験の<u>もうしこみ</u>はインターネットで受けつけています。",
+        "options": [
+          "配達",
+          "注文",
+          "申請",
+          "希望"
+        ],
+        "answer": "申請",
+        "explain": "Việc đăng ký kỳ thi này đang được tiếp nhận qua Internet."
+      }
+    ]
+  }
+]

@@ -20,7 +20,6 @@
     <div id="result-container"></div>
     <button class="btn" onclick="restartQuiz()">Làm lại</button>
     <button class="btn" style="margin-left:10px;" onclick="goBackToList()">Quay lại danh sách</button>
-    <button class="btn" style="margin-left:10px;" onclick="saveFailed()">Lưu lỗi</button>
     <script>
         function renderResults() {
             const results = JSON.parse(localStorage.getItem('quizResult') || '[]');
@@ -45,20 +44,6 @@
             // Clear stored results and navigate back to the quiz list screen
             localStorage.removeItem('quizResult');
             window.location.href = 'list.html';
-        }
-        function saveFailed() {
-            // Retrieve all results, filter only the incorrect ones, and store them separately
-            const results = JSON.parse(localStorage.getItem('quizResult') || '[]');
-            const failed = results.filter(r => !r.isCorrect);
-            if (!failed.length) {
-                alert('Không có câu hỏi nào sai để lưu.');
-                return;
-            }
-            // Save failed results to localStorage under a new key
-            localStorage.setItem('failedQuizResult', JSON.stringify(failed));
-            alert('Đã lưu các câu trả lời sai. Đang chuyển tới danh sách câu hỏi sai...');
-            // Navigate to the page that shows failed questions
-            window.location.href = 'failed.html';
         }
         renderResults();
     </script>
